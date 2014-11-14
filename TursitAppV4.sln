@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TursitAppV4", "TursitAppV4\TursitAppV4.csproj", "{A0EB36ED-FCA9-4AAD-8440-CC540C050846}"
 EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingProject1", "ModelingProject1\ModelingProject1.modelproj", "{2AED08C0-437D-4D54-99A7-17610446C5FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,16 @@ Global
 		{A0EB36ED-FCA9-4AAD-8440-CC540C050846}.Release|x86.ActiveCfg = Release|x86
 		{A0EB36ED-FCA9-4AAD-8440-CC540C050846}.Release|x86.Build.0 = Release|x86
 		{A0EB36ED-FCA9-4AAD-8440-CC540C050846}.Release|x86.Deploy.0 = Release|x86
+		{2AED08C0-437D-4D54-99A7-17610446C5FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AED08C0-437D-4D54-99A7-17610446C5FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AED08C0-437D-4D54-99A7-17610446C5FC}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{2AED08C0-437D-4D54-99A7-17610446C5FC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2AED08C0-437D-4D54-99A7-17610446C5FC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2AED08C0-437D-4D54-99A7-17610446C5FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AED08C0-437D-4D54-99A7-17610446C5FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AED08C0-437D-4D54-99A7-17610446C5FC}.Release|ARM.ActiveCfg = Release|Any CPU
+		{2AED08C0-437D-4D54-99A7-17610446C5FC}.Release|x64.ActiveCfg = Release|Any CPU
+		{2AED08C0-437D-4D54-99A7-17610446C5FC}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
