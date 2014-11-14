@@ -1,0 +1,471 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="ddc6c52f-7277-46bb-b2f9-212761e8cd14" name="DesignClassDiagram" linkedPackageId="9f0c68f7-6bef-4403-939b-a315631e8c91" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="3724c723-74bd-40ef-b947-ed29f4ac5144">
+      <profileInstance Id="cd19e4e1-e4e0-4348-a449-5b523653c0d7" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="c349d657-98c9-4133-84fb-63c1175caa6f">
+      <profileInstance Id="af2476ca-87f2-4804-95f6-e715ed7bf337" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="ce0f17f2-8e6c-4986-9e5a-bf5c457eb639" name="View">
+        <elementDefinition Id="e574b678-02f4-42d1-87c4-da3c15efcfd4" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="67362270-fcac-433d-92d6-3c3919c4e48f" name="Mainpage" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="b979815f-ba92-4723-8510-c230f1c0f372" />
+              <targetEnds>
+                <association Id="ce12a1cc-7d86-45fb-88af-28bbaaf9af0c" isDerived="false" sourceEndRoleName="Mainpage" targetEndRoleName="MainViewModel" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="c009b036-f708-4ffc-a0aa-12d6d9468267" LastKnownName="MainViewModel" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="14b72e4c-03dc-49fd-88c6-443dd32a2497" name="Mainpage" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="67e81077-733f-4d9b-b8cc-f9f9d2c5a2a7" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="7495f7b6-b81b-4486-9fb2-9ce849344bf8" name="MainViewModel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="93131643-7424-407f-82cb-f1b8b3256958" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="ec564dfa-cbc7-4312-a6a9-364074da9f29" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="f8204855-22e7-468d-8deb-613238843a5f" name="Kategorier" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="f6d4846c-86a0-4c26-9e83-8aceab04a308" />
+              <targetEnds>
+                <association Id="d333131d-72dc-4fe9-a59d-0e795e101404" isDerived="false" sourceEndRoleName="Kategorier" targetEndRoleName="MainViewModel" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="c009b036-f708-4ffc-a0aa-12d6d9468267" LastKnownName="MainViewModel" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="9a2e7f8c-5dd9-4b54-b801-1934011baf03" name="Kategorier" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="a28853d8-ca34-4804-b7f1-c90a72496e1a" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="f718fb96-289c-4c6f-9189-f37df30c151e" name="MainViewModel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="0b709d3c-473f-40c9-b967-f69fb405973e" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="db68ead7-b903-47c0-bab5-a3fb1255d5eb" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="05a5beda-4e93-4495-9a3f-716306b01b1f" name="Farvoritter" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="1c92929c-ec4e-4f96-a45f-f00b0800787a" />
+              <targetEnds>
+                <association Id="10a820be-15a8-486d-99b2-843523de0ae1" isDerived="false" sourceEndRoleName="Farvoritter" targetEndRoleName="MainViewModel" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="c009b036-f708-4ffc-a0aa-12d6d9468267" LastKnownName="MainViewModel" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="f3225e59-32f7-48bd-9133-7a5b4e43861d" name="Farvoritter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="14993a91-d4d1-40b5-be9a-2f7cbf1fc9a2" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="1122770b-3e31-4598-a2b2-95f45345252c" name="MainViewModel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="3590d73f-53e6-4863-8af5-2bfc1d8d90c5" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="d1ea264e-0bc7-41c1-abc3-7aba6599b81e" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="f1a15196-2872-4029-906c-10477a969ceb" name="ViewModel">
+        <elementDefinition Id="0ce8d773-f3a4-46ec-8b4f-907e80834858" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="c009b036-f708-4ffc-a0aa-12d6d9468267" name="MainViewModel" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="12903dab-e6dc-4267-9a9f-551849884030" />
+              <targetEnds>
+                <association Id="2fef43dc-e496-486f-821f-4895a01d4571" isDerived="false" sourceEndRoleName="MainViewModel" targetEndRoleName="Kategori" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="becdb854-d46e-4556-897a-9b5d88e7c693" LastKnownName="Kategori" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="eef3b163-6f89-4585-a257-fc09b6b2920d" name="MainViewModel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="7131b8d4-9ada-4662-adf9-e22779bec8d4" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="8d0a2370-82f5-4d9c-9efc-5f1c66230a9e" name="Kategori" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="a9509be4-501a-4c18-bf31-b5819da0d064" name="Lower" value="*">
+                            <elementDefinition Id="608b1156-1b62-44fb-9a5b-7b1d58f64240" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="a315589d-f99c-4d68-ab5b-39921504c598" name="Upper" value="*">
+                            <elementDefinition Id="c53fca52-a5b6-46b4-9f0d-d5c4660ac288" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="1819d32e-1f53-4012-a804-b5cd797567ac" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="aa8b889e-a300-4b61-a4ce-f81b01bb4ce8" />
+                </association>
+                <association Id="379e7ac8-24c2-4ba7-8d3d-3b6f158c0dff" isDerived="false" sourceEndRoleName="MainViewModel" targetEndRoleName="RelayCommand" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="431b5776-5ef4-4204-8e18-a5b4e2d3153a" LastKnownName="RelayCommand" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="b861bf40-cf0f-4f78-9f00-f9ccb29d6ecd" name="MainViewModel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="00776134-765d-4a05-a224-234c38c5eef5" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="3ffc0cf7-42a5-4bbf-aabb-6b41f7b936f5" name="RelayCommand" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="0f84f02b-a69b-400a-b600-0f583a76f812" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="3da0c62e-0dbf-418a-9bb9-6ee8146d1ce9" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="96cc1dcd-0b0c-43a0-a593-1857fcaf22d7" name="Selected Kategori" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5584f92f-3c6b-41e2-ae5e-5061417d123d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="2dc48d9d-affc-437c-91c6-fc88f43bfbc4" LastKnownName="kategori" />
+                  </type_NamedElement>
+                </property>
+                <property Id="9fc934c5-f771-406b-b608-233e901ee799" name="Kategorier" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3774eb21-46b1-49a4-a1c7-000b485ce1de" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c91b0926-24a2-4c5e-9f6d-e3292ecf5bd3" LastKnownName="ObservableColletion&lt;Kategori&gt;" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="6b3571db-4d11-428a-bd6d-e66c870da497" name="Koncerthandler" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="edebe63f-d8d5-4d71-9b2d-9d4d4cbec06e" />
+              <targetEnds>
+                <association Id="ed57b255-644d-4ed2-9c3b-76024d33369b" isDerived="false" sourceEndRoleName="Koncerthandler" targetEndRoleName="MainViewModel" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="c009b036-f708-4ffc-a0aa-12d6d9468267" LastKnownName="MainViewModel" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="d7625eac-8826-497e-8fe1-a04343935ee3" name="Koncerthandler" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="2101ae1c-8d61-4294-9c1c-6bc8dc47273d" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="a872aef0-945a-4a97-9d8f-223d7c08db65" name="MainViewModel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="1071a1d4-05ab-4101-b265-a7f15dbdb0bb" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="8aec51bc-90ee-4479-93e1-11e9b200405e" />
+                </association>
+                <association Id="dc70a52d-9da4-4f54-bec6-fc7b80d8f3cd" isDerived="false" sourceEndRoleName="Koncerthandler" targetEndRoleName="Farvoritter" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="9f42460a-7318-4314-bda4-142f5faa8421" LastKnownName="Farvoritter" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="71b8312b-da10-4f44-bb50-5dab0fa0f783" name="Koncerthandler" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="bacfcfc8-6b1e-4396-aeeb-516f3ee24ed4" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="a7dcab49-e2de-4ad2-955e-f5fd8667a0d5" name="Farvoritter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="9245fb67-f869-4b77-97b9-f0f59d9e7ba4" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="40f75e0f-1610-40cc-8bc2-870ec8b90d49" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="74967c1d-5e81-4d6d-b146-eab65873e82a" name="Koncert" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3e89a20c-1f34-4167-b3b1-d91407df05a4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="82017ae0-c1db-43e2-ba78-1e456ef993e7" LastKnownName="string" />
+                  </type_NamedElement>
+                </property>
+                <property Id="53c917e0-6bf3-4a5c-b1d5-c544209f105c" name="Kategori" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="378feee6-3f35-499d-9d37-cb406ad63281" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="82017ae0-c1db-43e2-ba78-1e456ef993e7" LastKnownName="string" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="cb4f456f-f99d-4b01-8f18-5b2cfc0caf7c" name="Tilføjkoncert_favorit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="d1dfeec9-f574-4329-8cc4-0b2726477ff5" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="c19da2f3-4a80-4b86-9d29-84d7332f7f5c" direction="Return" isUnique="false">
+                        <elementDefinition Id="382a8e54-46ea-4188-b071-622218f89ba4" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="88d34d3a-e9dc-4ddb-b78b-4b1d8980046e" LastKnownName="void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="431b5776-5ef4-4204-8e18-a5b4e2d3153a" name="RelayCommand" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="f35c6c18-4513-425f-bc0d-a5ab61bad4fd" />
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="5ef97cd3-610e-4474-8b5b-8c83d8f9d919" name="Model">
+        <elementDefinition Id="eb4eb1cc-fd92-4171-8114-daf01b3da49c" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="c0c13a81-11f1-459d-8660-2574fffc4d31" name="Koncert" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="af2ffb2d-912a-4fc1-832c-9a989ad25d69" />
+              <targetEnds>
+                <association Id="677ed21e-bcd6-4c57-881b-ace79e278634" isDerived="false" sourceEndRoleName="Koncert" targetEndRoleName="Bands" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="8c5c9eba-50c1-44b7-b0ab-78dec3ef7cef" LastKnownName="Bands" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="0d2e5e76-6de3-473f-a56a-2bf28334e882" name="Koncert" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <lowerValueInternal>
+                          <literalString Id="e0ac7c24-e026-4d9d-9fa7-ade32f2a2a35" name="Lower" value="*">
+                            <elementDefinition Id="8deb07f3-d62e-42f6-9341-3456d3a0a237" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="ae4fabd3-870b-4d0e-8660-8a00a7869474" name="Upper" value="*">
+                            <elementDefinition Id="fb5821ce-2356-4b83-8c2f-a949e7bf39d5" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="2442bd0b-933e-4e4d-a100-5413bc6156aa" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="a4ba22e9-e159-4588-b994-23dee1a13a63" name="Bands" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="e2b89bc8-09be-4a39-80e9-25d3a620f130" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="a849aeb1-5d5f-4e36-b9ba-e0eb605c0f1f" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="35de1809-c5fd-4bb7-a518-a0e166cdea8e" name="Band" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="40277659-7437-41a5-93b6-5cdcc3921914" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="82017ae0-c1db-43e2-ba78-1e456ef993e7" LastKnownName="string" />
+                  </type_NamedElement>
+                </property>
+                <property Id="d20f7cad-b55a-4478-b345-da2e8fa2be43" name="pris" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0bfb2966-7dbe-438b-8afd-d4de35ebb9f1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="82017ae0-c1db-43e2-ba78-1e456ef993e7" LastKnownName="string" />
+                  </type_NamedElement>
+                </property>
+                <property Id="f6cba0c7-436e-49dd-bcdb-3655131821de" name="Tidspunkt" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d1b5a2df-51af-49ca-bce6-d1dc77c2e92a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="82017ae0-c1db-43e2-ba78-1e456ef993e7" LastKnownName="string" />
+                  </type_NamedElement>
+                </property>
+                <property Id="f4e85d10-4623-4df7-b2f2-966215b0d212" name="Spillested" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="99298af1-3039-4d43-af71-b31c3d8aa7d0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="82017ae0-c1db-43e2-ba78-1e456ef993e7" LastKnownName="string" />
+                  </type_NamedElement>
+                </property>
+                <property Id="de78572e-9899-4666-ab10-9f511df37dd4" name="Hjemmeside" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0e12df23-4bae-4b87-aee9-4bbcf9238c7d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="82017ae0-c1db-43e2-ba78-1e456ef993e7" LastKnownName="string" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="becdb854-d46e-4556-897a-9b5d88e7c693" name="Kategori" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="28c6f0d5-7c47-4cc9-9cbd-2060e7529e4d" />
+              <targetEnds>
+                <association Id="6de7ba29-6981-4341-b320-e6ab2568d76f" isDerived="false" sourceEndRoleName="Kategori" targetEndRoleName="Koncert" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="c0c13a81-11f1-459d-8660-2574fffc4d31" LastKnownName="Koncert" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="c22d4e02-aad6-4c7f-acec-b9f7259887da" name="Kategori" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="04b70e7c-6e1c-4077-b83c-745cb2b42620" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="298ae32f-3c13-4d61-873d-b01175cca957" name="Koncert" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="31cbabaf-c37a-4c57-8b05-26fd26f932a3" name="Lower" value="*">
+                            <elementDefinition Id="e8fc968d-9642-4816-bac3-dc8d62d5d9f9" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="8c184199-9c19-4fdf-9d93-04957a24773f" name="Upper" value="*">
+                            <elementDefinition Id="e6e66a2f-6dba-49bc-ae68-546893667731" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="ceaccdf9-acf9-44e7-97d9-d9c11ab2f123" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="8b5da409-4ccd-4aa5-a21e-5b6460a3bf99" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="68a6cba9-abf3-4b8a-8f75-f520c6e29124" name="Genre" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="415319c4-0abf-4fe4-87c6-6e170b0b1605" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="82605124-6637-44ab-8dc9-20f076173570" LastKnownName="ObservableCollection&lt;Koncert&gt;" />
+                  </type_NamedElement>
+                </property>
+                <property Id="b11fefbd-4f29-4d8f-826e-03c97b5e06fd" name="Navn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d37960ad-b7a0-4701-a8ce-2e59d872ecc0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="82017ae0-c1db-43e2-ba78-1e456ef993e7" LastKnownName="string" />
+                  </type_NamedElement>
+                </property>
+                <property Id="10336df7-8f6e-4a71-b156-9f74684c0f94" name="Billed" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="51a640ba-98a3-412e-b124-551579c76c3a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f660e0f6-f4e4-45ef-8d9d-2c534ce4a137" LastKnownName="string" />
+                  </type_NamedElement>
+                </property>
+                <property Id="d08d3f15-06fc-4829-bb97-5384577cbd25" name="BagrundsBilled" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="19e0ff10-9615-4ea0-8e34-391c5afe217a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5e5fb3c2-8b12-4330-9a92-9b0cc2d42f71" LastKnownName="string" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="8c5c9eba-50c1-44b7-b0ab-78dec3ef7cef" name="Bands" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="6b7c9b4d-b2cf-4510-a9da-31a4f6e05074" />
+              <ownedAttributesInternal>
+                <property Id="0827f0bc-eb98-46f8-bcb3-3eeeb6f1cf8d" name="Bands" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="625217ae-4f06-4829-a271-b30366d653d8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b22351b7-ffbf-4c5b-9e44-6ad749d718d2" LastKnownName="Dictionary&lt;band,Beskrivelse&gt;" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="9f42460a-7318-4314-bda4-142f5faa8421" name="Farvoritter" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="6ee59b92-536d-4187-ac47-d4a986b48e62" />
+              <ownedAttributesInternal>
+                <property Id="2271351f-3e9b-4349-b063-8905ac25838d" name="Koncerter" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9a0497b5-7644-4344-8e7b-002cbbde5a30" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="82605124-6637-44ab-8dc9-20f076173570" LastKnownName="ObservableCollection&lt;Koncert&gt;" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="516c48d0-029a-4bbb-9856-ded388d1f25f" name="TilføjKoncerter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="82a4d722-228a-4365-b944-30cfe2b35ef3" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="6a815fd2-b8e5-4425-a05b-fee76890cb34" direction="Return" isUnique="false">
+                        <elementDefinition Id="433ca2ce-c003-4359-8a6e-950d7a87ac68" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="af76b776-7171-44e0-be7f-d18c113cb731" LastKnownName="Void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="d64648ba-2811-4ed1-aac1-b06c488cc6b1" name="FjernKoncerter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="f6a4b93d-e839-4d5b-a3d4-3a514c8c47ba" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="18cf2366-0057-4c81-8689-d039e52bbc38" direction="Return" isUnique="false">
+                        <elementDefinition Id="121daa4a-7bb1-460e-b342-be13e84186e1" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="af76b776-7171-44e0-be7f-d18c113cb731" LastKnownName="Void" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <packageHasNamedElement>
+      <referencedType Id="82017ae0-c1db-43e2-ba78-1e456ef993e7" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="b247a834-b472-4506-8173-856be9f97737" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="82605124-6637-44ab-8dc9-20f076173570" name="ObservableCollection&lt;Koncert&gt;" isAbstract="false" isLeaf="false" cachedFullName="ObservableCollection&lt;Koncert&gt;">
+        <elementDefinition Id="0dce05b3-0478-4c6a-b4bc-d0625751224e" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b22351b7-ffbf-4c5b-9e44-6ad749d718d2" name="Dictionary&lt;band,Beskrivelse&gt;" isAbstract="false" isLeaf="false" cachedFullName="Dictionary&lt;band,Beskrivelse&gt;">
+        <elementDefinition Id="167ca0d8-c3e8-4a3e-a72b-f3cf2a4843e5" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2dc48d9d-affc-437c-91c6-fc88f43bfbc4" name="kategori" isAbstract="false" isLeaf="false" cachedFullName="kategori">
+        <elementDefinition Id="1c55a853-3101-4c1a-a07d-3d968e8ba9eb" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c91b0926-24a2-4c5e-9f6d-e3292ecf5bd3" name="ObservableColletion&lt;Kategori&gt;" isAbstract="false" isLeaf="false" cachedFullName="ObservableColletion&lt;Kategori&gt;">
+        <elementDefinition Id="1beed6a7-1bf5-4f82-af47-3336b996405b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="88d34d3a-e9dc-4ddb-b78b-4b1d8980046e" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="4ede4c34-935e-49c7-a859-e4eb68c90184" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="af76b776-7171-44e0-be7f-d18c113cb731" name="Void" isAbstract="false" isLeaf="false" cachedFullName="Void">
+        <elementDefinition Id="4ea202f9-f4f2-4287-be69-244e6f950389" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5e5fb3c2-8b12-4330-9a92-9b0cc2d42f71" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="b247a834-b472-4506-8173-856be9f97737" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f660e0f6-f4e4-45ef-8d9d-2c534ce4a137" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="b247a834-b472-4506-8173-856be9f97737" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="9f0c68f7-6bef-4403-939b-a315631e8c91" name="ModelingProject1">
+    <elementDefinition Id="eab101c5-b85e-4c48-95df-c8934427dcf2" />
+  </package>
+</logicalClassDesignerModel>

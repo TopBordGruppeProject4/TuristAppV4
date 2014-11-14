@@ -910,6 +910,24 @@
         Id="a64efe9c-e9ad-4006-ad4d-301ab0ec077b"
         name="ExecutionEvent" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="e574b678-02f4-42d1-87c4-da3c15efcfd4"
+        LastKnownName="View"
+        LastKnownLocation="Package_1043.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="0ce8d773-f3a4-46ec-8b4f-907e80834858"
+        LastKnownName="ViewModel"
+        LastKnownLocation="Package1_1043.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="eb4eb1cc-fd92-4171-8114-daf01b3da49c"
+        LastKnownName="Model"
+        LastKnownLocation="Package_1044.uml" />
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
