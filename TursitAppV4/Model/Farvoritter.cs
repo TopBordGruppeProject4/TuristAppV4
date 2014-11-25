@@ -9,21 +9,16 @@ namespace TursitAppV4.Model
 {
     class Farvoritter
     {
-        public ObservableCollection<Koncert> FavoritKoncerter { get; set; }
 
-        public Farvoritter(ObservableCollection<Koncert> favoritKoncerter)
+        public ObservableCollection<Koncert> Favoritkoncerter { get; set; }
+        public Koncert SelectedKoncert { get; set; }
+        public Farvoritter()
         {
-            FavoritKoncerter = favoritKoncerter;
+            Favoritkoncerter = new ObservableCollection<Koncert>();
         }
-
-        public override string ToString()
-        {
-            return string.Format("FavoritKoncerter: {0}", FavoritKoncerter);
-        }
-
         public void AddKoncert()
         {
-            
+          Favoritkoncerter.Add(SelectedKoncert);
         }
     }
 
