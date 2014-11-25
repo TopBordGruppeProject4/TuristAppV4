@@ -8,5 +8,7 @@ namespace TursitAppV4.Model
 {
     class Bands
     {
+        public string Navn { get; set; }
+
     }
 }
