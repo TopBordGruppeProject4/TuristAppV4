@@ -103,8 +103,6 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-    <Folder Include="Model\" />
-    <Folder Include="Viewmodel\" />
     <Folder Include="View\" />
   </ItemGroup>
   <ItemGroup>
@@ -114,7 +112,13 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\Bands.cs" />
+    <Compile Include="Model\Farvoritter.cs" />
+    <Compile Include="Model\Kategori.cs" />
+    <Compile Include="Model\Koncert.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Viewmodel\KoncertHandler.cs" />
+    <Compile Include="Viewmodel\MainViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
