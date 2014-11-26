@@ -9,18 +9,20 @@ namespace TursitAppV4.Model
 {
     class Kategori
     {
-        public String Genre { get; set; }
+        public string Genre { get; set; }
         public ObservableCollection<Koncert> ListeAfKoncerter { get; set; }
+        public string Bagrundsbilled { get; set; }
 
-        public Kategori(string genre, ObservableCollection<Koncert> listeAfKoncerter)
+        public Kategori(string genre,string bagrundsbilled)
         {
             Genre = genre;
             ListeAfKoncerter = listeAfKoncerter;
+            Bagrundsbilled = bagrundsbilled;
         }
 
         public override string ToString()
         {
-            return string.Format("Genre: {0}, ListeAfKoncerter: {1}", Genre, ListeAfKoncerter);
+            return string.Format("Genre: {0}, ListeAfKoncerter: {1},Bagrundsbilled{2}", Genre, ListeAfKoncerter, Bagrundsbilled);
         }
     }
 }
