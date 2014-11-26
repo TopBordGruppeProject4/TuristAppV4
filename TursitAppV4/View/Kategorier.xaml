@@ -43,8 +43,10 @@
                         AutomationProperties.Name="Back"
                         AutomationProperties.AutomationId="BackButton"
                         AutomationProperties.ItemType="Navigation Button"/>
-            <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
+            <TextBlock x:Name="pageTitle" Text="Skal være navnet på genren" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
         </Grid>
+        <ListView HorizontalAlignment="Left" Height="458" Margin="82,75,0,0" Grid.Row="1" VerticalAlignment="Top" Width="236"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="694,142,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="133"/>
     </Grid>
 </Page>
