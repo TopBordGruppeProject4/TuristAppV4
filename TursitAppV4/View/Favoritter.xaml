@@ -43,8 +43,23 @@
                         AutomationProperties.Name="Back"
                         AutomationProperties.AutomationId="BackButton"
                         AutomationProperties.ItemType="Navigation Button"/>
-            <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
+            <TextBlock x:Name="pageTitle" Text="Favoritter" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
         </Grid>
+        <ListView HorizontalAlignment="Left" Height="458" Margin="82,75,0,0" Grid.Row="1" VerticalAlignment="Top" Width="236"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="399,75,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Artist" VerticalAlignment="Top" Width="150" SelectionChanged="TextBlock_SelectionChanged" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="399,120,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Artist binding" VerticalAlignment="Top" Width="150" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="762,75,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Spillested" VerticalAlignment="Top" Width="150" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="762,120,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Spilleted binding" VerticalAlignment="Top" Width="150" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="762,193,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Dato" VerticalAlignment="Top" Width="150" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="762,238,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Dato binding" VerticalAlignment="Top" Width="150" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="762,323,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Tidspunkt" VerticalAlignment="Top" Width="150" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="762,368,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Tidspunkt binding" VerticalAlignment="Top" Width="150" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="399,193,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Beskrivelse" VerticalAlignment="Top" Width="150" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="295" Margin="399,238,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Beskrivelse binding" VerticalAlignment="Top" Width="262" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="1050,193,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Adresse" VerticalAlignment="Top" Width="150" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="1050,238,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Adresse Binding" VerticalAlignment="Top" Width="150" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="1050,323,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Hjemmeside" VerticalAlignment="Top" Width="150" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="1050,368,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Hjemmeside binding" VerticalAlignment="Top" Width="150" FontSize="22"/>
     </Grid>
 </Page>
