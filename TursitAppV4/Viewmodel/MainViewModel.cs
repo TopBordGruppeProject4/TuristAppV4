@@ -21,8 +21,8 @@ namespace TursitAppV4.Viewmodel
         static Band DeadMau5 = new Band("DeadMau5","placeholder");
         static Band VonDü = new Band("Von Dü","placeholder");
         static Band Redwarszawa = new Band("Red warszawa","placeholder");
-        
-        Kategori RockKategori = new Kategori("Rock","placeholder")
+
+        private Kategori RockKategori = new Kategori("Rock", "placeholder");
         Koncert DADkKoncert = new Koncert(DAD, "kl.20:00", "d.2-2-2020", Gimle);
         Koncert MagtensKorridorkKoncert = new Koncert(MagtensKorridor,"kl:19:00","d.2-02-2020",Paramount);
         
