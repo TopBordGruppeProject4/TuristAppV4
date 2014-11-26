@@ -18,8 +18,8 @@ namespace TursitAppV4.Viewmodel
         static Band Medina = new Band("Medina","Placeholder");
         static Band RasmusSeebach = new Band("Rasmus Seebach","placeholder");
         static Band DjTiësto = new Band("DJTiësto","placeholder");
-        static Band DeadMouse = new Band("DeadMouse","placeholder");
-        static Band FonDü = new Band("Fon Dü","placeholder");
+        static Band DeadMau5 = new Band("DeadMau5","placeholder");
+        static Band VonDü = new Band("Von Dü","placeholder");
         static Band Redwarszawa = new Band("Red warszawa","placeholder");
         
         Kategori RockKategori = new Kategori("Rock","placeholder")
@@ -32,11 +32,11 @@ namespace TursitAppV4.Viewmodel
         
         Kategori TecnoKategori = new Kategori("Tecno","placeholder");
         Koncert DjTiëstoKoncert = new Koncert(DjTiësto, "kl.21:30", "d.3-6-2015", Gimle);
-        Koncert DeadMousekKoncert = new Koncert(DeadMouse,"kl.19:00","d.4-5-2016",RoskildeKongresscenter);
+        Koncert DeadMau5kKoncert = new Koncert(DeadMau5,"kl.19:00","d.4-5-2016",RoskildeKongresscenter);
 
 
         Kategori IndieKategori = new Kategori("Indie","placeholder");
-        Koncert FonDüKoncert = new Koncert(FonDü, "kl.21:00","d.14-11-2015",Gimle);
+        Koncert VonDüKoncert = new Koncert(VonDü, "kl.21:00","d.14-11-2015",Gimle);
         Koncert RedwarszawakKoncert = new Koncert(Redwarszawa,"kl.21:00","d.4-8-2015", Paramount);
 
         public MainViewModel()
@@ -48,9 +48,9 @@ namespace TursitAppV4.Viewmodel
             PopKategori.ListeAfKoncerter.Add(RasmusSeebachkKoncert);
 
             TecnoKategori.ListeAfKoncerter.Add(DjTiëstoKoncert);
-            TecnoKategori.ListeAfKoncerter.Add(DeadMousekKoncert);
+            TecnoKategori.ListeAfKoncerter.Add(DeadMau5kKoncert);
 
-            IndieKategori.ListeAfKoncerter.Add(FonDüKoncert);
+            IndieKategori.ListeAfKoncerter.Add(VonDüKoncert);
             IndieKategori.ListeAfKoncerter.Add(RedwarszawakKoncert);
         }
     }
