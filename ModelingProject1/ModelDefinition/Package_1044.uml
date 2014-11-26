@@ -64,6 +64,72 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="60d1695c-19dd-4465-bd08-940e1624d50a"
+            isDerived="false"
+            sourceEndRoleName="Koncert"
+            targetEndRoleName="Spillesteder"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5c3fb5ec-9c6e-4238-9271-d38ce9eec0a1"
+              LastKnownName="Spillesteder"
+              LastKnownLocation="Package_1044.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="96e385fd-252e-4971-a306-d9c1559972d2"
+                  name="Koncert"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="68d9b7d2-e862-4606-9512-f66a6812a859"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ddb3c6de-ecd9-4e8b-9b46-d9b7ab92fea7"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3a539493-7b57-4ba9-a519-1736b93f1951"
+                  name="Spillesteder"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="5d1fb9f9-6490-43f4-b28c-e470ad3a2a84"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="8c75d985-dc46-4dc7-b2d8-3c99a719bc6b"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property
@@ -413,6 +479,50 @@
       <undefinedType
         Id="4ea202f9-f4f2-4287-be69-244e6f950389"
         name="Void" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5c3fb5ec-9c6e-4238-9271-d38ce9eec0a1"
+        name="Spillesteder"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="94eaaa98-215b-4988-93ff-41ed0c0782f7"
+            name="Adresse"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ca972b83-8b83-4c71-ad69-26076a29452d"
+            name="Navn"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="bf8aaef0-f1a4-4186-a9c5-2a93ebcae946"
+            name="Hjemmeside"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
 </package>

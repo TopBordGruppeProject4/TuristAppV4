@@ -112,6 +112,7 @@
     <Compile Include="Model\Farvoritter.cs" />
     <Compile Include="Model\Kategori.cs" />
     <Compile Include="Model\Koncert.cs" />
+    <Compile Include="Model\Spillested.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Viewmodel\KoncertHandler.cs" />
     <Compile Include="Viewmodel\MainViewModel.cs" />

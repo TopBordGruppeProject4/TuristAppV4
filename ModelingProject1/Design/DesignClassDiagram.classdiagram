@@ -254,6 +254,42 @@
                   </relationshipOwnedElementsInternal>
                   <elementDefinition Id="a849aeb1-5d5f-4e36-b9ba-e0eb605c0f1f" />
                 </association>
+                <association Id="f1b6bb27-f561-4fef-bf37-3f0e6713bc5c" isDerived="false" sourceEndRoleName="Koncert" targetEndRoleName="Spillesteder" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="45114239-12b5-4731-a5d5-f152f7e9e79a" LastKnownName="Spillesteder" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="28d2ed0e-a35f-484f-ab74-82d76aeb4d19" name="Koncert" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <lowerValueInternal>
+                          <literalString Id="d2ac897c-1994-497a-9106-1335b7560726" name="Lower" value="*">
+                            <elementDefinition Id="68d9b7d2-e862-4606-9512-f66a6812a859" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="c78263d0-5ebd-4189-9fa2-f4fd96a12910" name="Upper" value="*">
+                            <elementDefinition Id="ddb3c6de-ecd9-4e8b-9b46-d9b7ab92fea7" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="96e385fd-252e-4971-a306-d9c1559972d2" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="0df666bf-3cf6-4a5a-8a3c-ba9d93e0377b" name="Spillesteder" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <lowerValueInternal>
+                          <literalString Id="636526b4-1dd9-4554-ae3f-86f67ce53f72" name="Lower" value="*">
+                            <elementDefinition Id="5d1fb9f9-6490-43f4-b28c-e470ad3a2a84" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="62be8eed-ebe1-46e4-bfe9-69920c83d06b" name="Upper" value="*">
+                            <elementDefinition Id="8c75d985-dc46-4dc7-b2d8-3c99a719bc6b" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="3a539493-7b57-4ba9-a519-1736b93f1951" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="60d1695c-19dd-4465-bd08-940e1624d50a" />
+                </association>
               </targetEnds>
               <ownedAttributesInternal>
                 <property Id="35de1809-c5fd-4bb7-a518-a0e166cdea8e" name="Band" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -394,6 +430,22 @@
                   </ownedParameters>
                 </operation>
               </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="45114239-12b5-4731-a5d5-f152f7e9e79a" name="Spillesteder" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="5c3fb5ec-9c6e-4238-9271-d38ce9eec0a1" />
+              <ownedAttributesInternal>
+                <property Id="1e71fafb-900a-47af-94bc-80dc25a573dc" name="Adresse" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="94eaaa98-215b-4988-93ff-41ed0c0782f7" />
+                </property>
+                <property Id="cb6988d6-198a-4f03-9b6d-21676cd7b740" name="Navn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ca972b83-8b83-4c71-ad69-26076a29452d" />
+                </property>
+                <property Id="821cb13f-a10c-4445-98d4-4ed5197e74ca" name="Hjemmeside" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bf8aaef0-f1a4-4186-a9c5-2a93ebcae946" />
+                </property>
+              </ownedAttributesInternal>
             </class>
           </packageHasNamedElement>
         </packagedElements>

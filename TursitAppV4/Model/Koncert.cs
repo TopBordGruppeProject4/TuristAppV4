@@ -11,9 +11,9 @@ namespace TursitAppV4.Model
         public Band Band { get; set; }
         public string Tidspunkt { get; set; }
         public string Dato { get; set; }
-        public string Spillested { get; set; }
+        public Spillested Spillested { get; set; }
 
-        public Koncert(Band band, string tidspunkt, string dato, string spillested)
+        public Koncert(Band band, string tidspunkt, string dato, Spillested spillested)
         {
             Band = band;
             Tidspunkt = tidspunkt;
