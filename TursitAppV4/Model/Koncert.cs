@@ -8,12 +8,12 @@ namespace TursitAppV4.Model
 {
     class Koncert
     {
-        public string Band { get; set; }
+        public Band Band { get; set; }
         public string Tidspunkt { get; set; }
         public string Dato { get; set; }
         public string Spillested { get; set; }
 
-        public Koncert(string band, string tidspunkt, string dato, string spillested)
+        public Koncert(Band band, string tidspunkt, string dato, string spillested)
         {
             Band = band;
             Tidspunkt = tidspunkt;

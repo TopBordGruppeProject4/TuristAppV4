@@ -108,7 +108,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Model\Bands.cs" />
+    <Compile Include="Model\Band.cs" />
     <Compile Include="Model\Farvoritter.cs" />
     <Compile Include="Model\Kategori.cs" />
     <Compile Include="Model\Koncert.cs" />

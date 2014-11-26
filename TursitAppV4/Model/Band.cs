@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace TursitAppV4.Model
 {
-    class Bands
+    class Band
     {
         public string Navn { get; set; }
         public string Beskrivelse { get; set; }
 
-        public Bands(string navn, string beskrivelse)
+        public Band(string navn, string beskrivelse)
         {
             Navn = navn;
             Beskrivelse = beskrivelse;
