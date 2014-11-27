@@ -16,7 +16,6 @@ namespace TursitAppV4.Model
         public Kategori(string genre,string bagrundsbilled)
         {
             Genre = genre;
-            ListeAfKoncerter = listeAfKoncerter;
             Bagrundsbilled = bagrundsbilled;
         }
 

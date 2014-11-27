@@ -108,14 +108,20 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Common\NavigationHelper.cs" />
+    <Compile Include="Common\ObservableDictionary.cs" />
+    <Compile Include="Common\RelayCommand.cs" />
+    <Compile Include="Common\SuspensionManager.cs" />
     <Compile Include="Model\Band.cs" />
     <Compile Include="Model\Farvoritter.cs" />
+    <Compile Include="Model\FileHandler.cs" />
     <Compile Include="Model\Kategori.cs" />
     <Compile Include="Model\Koncert.cs" />
     <Compile Include="Model\Spillested.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Viewmodel\KoncertHandler.cs" />
     <Compile Include="Viewmodel\MainViewModel.cs" />
+    <Compile Include="Viewmodel\RelayCommand.cs" />
     <Compile Include="View\Favoritter.xaml.cs">
       <DependentUpon>Favoritter.xaml</DependentUpon>
     </Compile>
