@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TursitAppV4.Model
 {
-    class Farvoritter
+    public class Farvoritter
     {
 
         public ObservableCollection<Koncert> Favoritkoncerter { get; set; }

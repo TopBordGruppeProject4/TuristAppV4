@@ -7,9 +7,9 @@ using TursitAppV4.Model;
 
 namespace TursitAppV4.Viewmodel
 {
-    class MainViewModel
+    public class MainViewModel
     {
-        public Kategori SelectedKategori { get; set; }
+        Kategori SelectedKategori { get; set; }
 
         static Spillested Paramount = new Spillested("Paramount","Placehonder","eriksvej 40 , 4000 Roskilde");
         static Spillested Gimle = new Spillested("Gimle","Placeholder","Helligkorsvej 2, 4000 Roskilde");
