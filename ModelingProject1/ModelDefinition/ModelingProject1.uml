@@ -276,30 +276,8 @@
             aggregation="None"
             isComposite="false" />
           <property
-            Id="a202a50c-415f-48c6-adb7-c3aff02a2bfd"
-            name="Beskrivelse"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
             Id="ddf2d1d5-6383-4f3c-9090-62eeb3156dd5"
             name="Hjemmeside"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="5cd49898-9190-4fd4-89f6-fe4faa608827"
-            name="Telefon_Nr"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -474,22 +452,22 @@
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="f0277849-4190-47c1-895e-a8dbd6cebe1d"
-            name="MessageOccurrenceSpecification12">
-            <covered>
-              <lifelineMoniker
-                Id="f0a5ea4b-b989-4d00-af28-1491f83a5644"
-                LastKnownName=": KoncertHandler"
-                LastKnownLocation="ModelingProject1.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="6dd4a9a9-c1ec-44b3-ba46-196dd2ab9eb3"
             name="MessageOccurrenceSpecification11">
             <covered>
               <lifelineMoniker
                 Id="43d4e3c7-ad6d-4682-805e-3e05d5a7615d"
                 LastKnownName=": kategori"
+                LastKnownLocation="ModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f0277849-4190-47c1-895e-a8dbd6cebe1d"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="f0a5ea4b-b989-4d00-af28-1491f83a5644"
+                LastKnownName=": KoncertHandler"
                 LastKnownLocation="ModelingProject1.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -596,22 +574,22 @@
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="fce8f215-d3f4-451b-aaa3-1cb995d9c6aa"
-            name="MessageOccurrenceSpecification3">
-            <covered>
-              <lifelineMoniker
-                Id="f0a5ea4b-b989-4d00-af28-1491f83a5644"
-                LastKnownName=": KoncertHandler"
-                LastKnownLocation="ModelingProject1.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="4c7eefb3-45cf-4738-9b31-92ad62438b00"
             name="MessageOccurrenceSpecification4">
             <covered>
               <lifelineMoniker
                 Id="5b0ce916-5c16-42a9-ac13-d4d3c30175fa"
                 LastKnownName="Bruger"
+                LastKnownLocation="ModelingProject1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="fce8f215-d3f4-451b-aaa3-1cb995d9c6aa"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="f0a5ea4b-b989-4d00-af28-1491f83a5644"
+                LastKnownName=": KoncertHandler"
                 LastKnownLocation="ModelingProject1.uml" />
             </covered>
           </messageOccurrenceSpecification>

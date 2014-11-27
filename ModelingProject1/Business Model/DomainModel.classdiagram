@@ -118,14 +118,8 @@
           <property Id="e5020ac4-ad22-440b-8e19-fd9892023962" name="Adresse" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="c7ed6af1-c2f7-4a5c-9172-a35ba48173b7" />
           </property>
-          <property Id="70fe2293-60cf-437b-97fa-731f48615170" name="Beskrivelse" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="a202a50c-415f-48c6-adb7-c3aff02a2bfd" />
-          </property>
           <property Id="ce726774-6ac6-4861-8329-461eb15c36bb" name="Hjemmeside" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="ddf2d1d5-6383-4f3c-9090-62eeb3156dd5" />
-          </property>
-          <property Id="0ba199b7-6da1-4ddb-8ecb-afa39bc18e7a" name="Telefon_Nr" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="5cd49898-9190-4fd4-89f6-fe4faa608827" />
           </property>
         </ownedAttributesInternal>
       </class>
