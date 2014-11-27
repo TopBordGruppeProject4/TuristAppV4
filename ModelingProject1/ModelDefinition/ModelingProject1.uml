@@ -25,6 +25,61 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="00dffb03-8f76-453b-90b2-a1084d94b6b5"
+            isDerived="false"
+            sourceEndRoleName="Koncert"
+            targetEndRoleName="Farvoritter"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b73ed4e6-4c01-440f-bba9-0e237ecf34fa"
+              LastKnownName="Farvoritter"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="08b2f6d9-13a8-42d0-8929-b6fd5e94035b"
+                  name="Koncert"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e39fa3c4-8957-487c-ba05-e3129f2ff639"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="05141556-f6c3-4bb7-b01b-8f9e1b0ff583"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cf825e36-8bbe-4a93-9b38-e729f7bbda36"
+                  name="Farvoritter"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="85d35b28-bb5c-4e46-9052-d2e230777544"
@@ -38,19 +93,8 @@
             aggregation="None"
             isComposite="false" />
           <property
-            Id="7b55714b-4d87-4dac-aea3-489d3794baca"
-            name="Band"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="7cb72fdd-7011-435e-94cb-50cc9f885048"
-            name="Pris"
+            Id="2bdac3eb-7bb1-467b-82f1-759a4d2a0610"
+            name="Dato"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -589,90 +633,6 @@
                 LastKnownLocation="ModelingProject1.uml" />
             </covered>
           </executionOccurrenceSpecification>
-          <behaviorExecutionSpecification
-            Id="e192f910-2ce7-4f10-8690-99900ae9aa94"
-            name="BehaviorExecutionSpecification7">
-            <coveredLifelines>
-              <lifelineMoniker
-                Id="c4d3ce77-3c78-4dc4-8d20-30600c7cd354"
-                LastKnownName=": Farvoritter"
-                LastKnownLocation="ModelingProject1.uml" />
-            </coveredLifelines>
-            <finish>
-              <executionOccurrenceSpecificationMoniker
-                Id="377ac818-4722-4a80-aa37-c609a04a3f71"
-                LastKnownName="ExecutionOccurrenceSpecification14"
-                LastKnownLocation="ModelingProject1.uml" />
-            </finish>
-            <start>
-              <executionOccurrenceSpecificationMoniker
-                Id="a44235aa-cac3-45c5-ae3e-b3471c43a652"
-                LastKnownName="ExecutionOccurrenceSpecification13"
-                LastKnownLocation="ModelingProject1.uml" />
-            </start>
-            <nestedOccurrences>
-              <messageOccurrenceSpecificationMoniker
-                Id="fe7ed6ae-69fd-4c6f-a290-cf12312000a0"
-                LastKnownName="MessageOccurrenceSpecification24"
-                LastKnownLocation="ModelingProject1.uml" />
-            </nestedOccurrences>
-          </behaviorExecutionSpecification>
-          <executionOccurrenceSpecification
-            Id="a44235aa-cac3-45c5-ae3e-b3471c43a652"
-            name="ExecutionOccurrenceSpecification13">
-            <event>
-              <executionOccurrenceSpecificationReferencesEvent>
-                <executionEventMoniker
-                  Id="9da61a9b-a111-479d-b65e-fe8434059f00"
-                  LastKnownName="ExecutionEvent"
-                  LastKnownLocation="ModelingProject1.uml" />
-              </executionOccurrenceSpecificationReferencesEvent>
-            </event>
-            <covered>
-              <lifelineMoniker
-                Id="c4d3ce77-3c78-4dc4-8d20-30600c7cd354"
-                LastKnownName=": Farvoritter"
-                LastKnownLocation="ModelingProject1.uml" />
-            </covered>
-          </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="3d5ec8c9-c44f-4b68-b9d4-4bec9f7305d0"
-            name="MessageOccurrenceSpecification23">
-            <covered>
-              <lifelineMoniker
-                Id="5b0ce916-5c16-42a9-ac13-d4d3c30175fa"
-                LastKnownName="Bruger"
-                LastKnownLocation="ModelingProject1.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="fe7ed6ae-69fd-4c6f-a290-cf12312000a0"
-            name="MessageOccurrenceSpecification24">
-            <covered>
-              <lifelineMoniker
-                Id="c4d3ce77-3c78-4dc4-8d20-30600c7cd354"
-                LastKnownName=": Farvoritter"
-                LastKnownLocation="ModelingProject1.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <executionOccurrenceSpecification
-            Id="377ac818-4722-4a80-aa37-c609a04a3f71"
-            name="ExecutionOccurrenceSpecification14">
-            <event>
-              <executionOccurrenceSpecificationReferencesEvent>
-                <executionEventMoniker
-                  Id="a64efe9c-e9ad-4006-ad4d-301ab0ec077b"
-                  LastKnownName="ExecutionEvent"
-                  LastKnownLocation="ModelingProject1.uml" />
-              </executionOccurrenceSpecificationReferencesEvent>
-            </event>
-            <covered>
-              <lifelineMoniker
-                Id="c4d3ce77-3c78-4dc4-8d20-30600c7cd354"
-                LastKnownName=": Farvoritter"
-                LastKnownLocation="ModelingProject1.uml" />
-            </covered>
-          </executionOccurrenceSpecification>
         </fragments>
         <lifelines>
           <lifeline
@@ -688,10 +648,6 @@
               <messageOccurrenceSpecificationMoniker
                 Id="4c7eefb3-45cf-4738-9b31-92ad62438b00"
                 LastKnownName="MessageOccurrenceSpecification4"
-                LastKnownLocation="ModelingProject1.uml" />
-              <messageOccurrenceSpecificationMoniker
-                Id="3d5ec8c9-c44f-4b68-b9d4-4bec9f7305d0"
-                LastKnownName="MessageOccurrenceSpecification23"
                 LastKnownLocation="ModelingProject1.uml" />
             </topLevelOccurrences>
           </lifeline>
@@ -740,14 +696,6 @@
               <executionOccurrenceSpecificationMoniker
                 Id="89e9f084-6f20-4cb5-acf1-4eae85712f70"
                 LastKnownName="ExecutionOccurrenceSpecification10"
-                LastKnownLocation="ModelingProject1.uml" />
-              <executionOccurrenceSpecificationMoniker
-                Id="a44235aa-cac3-45c5-ae3e-b3471c43a652"
-                LastKnownName="ExecutionOccurrenceSpecification13"
-                LastKnownLocation="ModelingProject1.uml" />
-              <executionOccurrenceSpecificationMoniker
-                Id="377ac818-4722-4a80-aa37-c609a04a3f71"
-                LastKnownName="ExecutionOccurrenceSpecification14"
                 LastKnownLocation="ModelingProject1.uml" />
             </topLevelOccurrences>
           </lifeline>
@@ -848,25 +796,6 @@
                 LastKnownLocation="ModelingProject1.uml" />
             </receiveEvent>
           </message>
-          <message
-            Id="d635e874-09ff-44b7-8c08-453664bee8a6"
-            name="FjernKoncert(koncert)"
-            messageKind="Complete"
-            messageSort="AsynchCall"
-            createSelfMessage="false">
-            <sendEvent>
-              <messageOccurrenceSpecificationMoniker
-                Id="3d5ec8c9-c44f-4b68-b9d4-4bec9f7305d0"
-                LastKnownName="MessageOccurrenceSpecification23"
-                LastKnownLocation="ModelingProject1.uml" />
-            </sendEvent>
-            <receiveEvent>
-              <messageOccurrenceSpecificationMoniker
-                Id="fe7ed6ae-69fd-4c6f-a290-cf12312000a0"
-                LastKnownName="MessageOccurrenceSpecification24"
-                LastKnownLocation="ModelingProject1.uml" />
-            </receiveEvent>
-          </message>
         </messages>
       </interaction>
     </packageHasNamedElement>
@@ -901,16 +830,6 @@
         name="ExecutionEvent" />
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <executionEvent
-        Id="9da61a9b-a111-479d-b65e-fe8434059f00"
-        name="ExecutionEvent" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <executionEvent
-        Id="a64efe9c-e9ad-4006-ad4d-301ab0ec077b"
-        name="ExecutionEvent" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <packageMoniker
         Id="e574b678-02f4-42d1-87c4-da3c15efcfd4"
         LastKnownName="View"
@@ -927,6 +846,102 @@
         Id="eb4eb1cc-fd92-4171-8114-daf01b3da49c"
         LastKnownName="Model"
         LastKnownLocation="Package_1044.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d33b639f-b400-424b-b92f-6b63b3b59c7d"
+        name="Band"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="7da7071b-b261-404e-8d2b-55c708801202"
+            isDerived="false"
+            sourceEndRoleName="Band"
+            targetEndRoleName="Koncert"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="132adfa1-881c-4615-8e2b-ec77564d7b82"
+              LastKnownName="Koncert"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b2f806fd-fc03-4afa-82f2-187f48aca32f"
+                  name="Band"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e1152c69-c21b-4464-83de-692dd511085e"
+                  name="Koncert"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="38da4907-25bb-4406-b7b1-a35d7b8946e0"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d4365524-2d82-46ce-8863-69f1a40edd47"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="f93ad75a-f755-4b6e-88a7-8cf175673731"
+            name="Navn"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="1d699f1a-9a7b-4aad-aa5a-8385a723e3c7"
+            name="Beskrivelse"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b73ed4e6-4c01-440f-bba9-0e237ecf34fa"
+        name="Farvoritter"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

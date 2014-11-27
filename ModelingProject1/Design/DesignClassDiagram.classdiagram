@@ -382,10 +382,16 @@
             <class Id="8c5c9eba-50c1-44b7-b0ab-78dec3ef7cef" name="Bands" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="6b7c9b4d-b2cf-4510-a9da-31a4f6e05074" />
               <ownedAttributesInternal>
-                <property Id="0827f0bc-eb98-46f8-bcb3-3eeeb6f1cf8d" name="Bands" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="625217ae-4f06-4829-a271-b30366d653d8" />
+                <property Id="e95f78ab-e0c3-433e-aa17-c9a38c6726b0" name="Navn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2f83cf1e-e55f-485c-aca0-5650fbab4a10" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="b22351b7-ffbf-4c5b-9e44-6ad749d718d2" LastKnownName="Dictionary&lt;band,Beskrivelse&gt;" />
+                    <referencedTypeMoniker Id="82017ae0-c1db-43e2-ba78-1e456ef993e7" LastKnownName="string" />
+                  </type_NamedElement>
+                </property>
+                <property Id="962d7d14-6926-491d-b9aa-145c9c86020d" name="Beskrivelse" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="96132817-087d-4166-9112-93c88ca77a43" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="82017ae0-c1db-43e2-ba78-1e456ef993e7" LastKnownName="string" />
                   </type_NamedElement>
                 </property>
               </ownedAttributesInternal>
@@ -438,12 +444,21 @@
               <ownedAttributesInternal>
                 <property Id="1e71fafb-900a-47af-94bc-80dc25a573dc" name="Adresse" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="94eaaa98-215b-4988-93ff-41ed0c0782f7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="82017ae0-c1db-43e2-ba78-1e456ef993e7" LastKnownName="string" />
+                  </type_NamedElement>
                 </property>
                 <property Id="cb6988d6-198a-4f03-9b6d-21676cd7b740" name="Navn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="ca972b83-8b83-4c71-ad69-26076a29452d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="82017ae0-c1db-43e2-ba78-1e456ef993e7" LastKnownName="string" />
+                  </type_NamedElement>
                 </property>
                 <property Id="821cb13f-a10c-4445-98d4-4ed5197e74ca" name="Hjemmeside" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="bf8aaef0-f1a4-4186-a9c5-2a93ebcae946" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="82017ae0-c1db-43e2-ba78-1e456ef993e7" LastKnownName="string" />
+                  </type_NamedElement>
                 </property>
               </ownedAttributesInternal>
             </class>
@@ -459,11 +474,6 @@
     <packageHasNamedElement>
       <referencedType Id="82605124-6637-44ab-8dc9-20f076173570" name="ObservableCollection&lt;Koncert&gt;" isAbstract="false" isLeaf="false" cachedFullName="ObservableCollection&lt;Koncert&gt;">
         <elementDefinition Id="0dce05b3-0478-4c6a-b4bc-d0625751224e" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="b22351b7-ffbf-4c5b-9e44-6ad749d718d2" name="Dictionary&lt;band,Beskrivelse&gt;" isAbstract="false" isLeaf="false" cachedFullName="Dictionary&lt;band,Beskrivelse&gt;">
-        <elementDefinition Id="167ca0d8-c3e8-4a3e-a72b-f3cf2a4843e5" />
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>

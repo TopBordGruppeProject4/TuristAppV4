@@ -1,32 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="d695524b-c1b3-4fee-9652-81dadd3514ee" name="DomainModel" linkedPackageId="7f69b5b5-39b4-4d0c-8a21-3d7bf4d079c7" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="3e3bb361-1bd5-4252-9e7b-86cdc4cb6432">
-      <profileInstance Id="19c017db-e7d9-4ac0-bf26-157216f31595" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="06fee18b-1a28-4b3b-bae8-f336918ebedb">
-      <profileInstance Id="c5c108de-1d06-4a71-963b-89d49c9b0099" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="d695524b-c1b3-4fee-9652-81dadd3514ee" name="DomainModel" linkedPackageId="7f69b5b5-39b4-4d0c-8a21-3d7bf4d079c7" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="add58e81-11ad-4641-a032-dd8bfda4be8c" name="Koncert" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="132adfa1-881c-4615-8e2b-ec77564d7b82" />
+        <targetEnds>
+          <association Id="6c7942c3-f1bc-4616-b4fb-ffb9b0898376" isDerived="false" sourceEndRoleName="Koncert" targetEndRoleName="Farvoritter" isLeaf="false" isAbstract="false">
+            <classMoniker Id="a11af213-61e4-4a94-8c0a-39ba54740cb1" LastKnownName="Farvoritter" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="14ec316b-6f65-451f-a379-f11ac53e18a3" name="Koncert" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="acfe478e-4a5b-43be-b150-4d87c12c7343" name="Lower" value="*">
+                      <elementDefinition Id="e39fa3c4-8957-487c-ba05-e3129f2ff639" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="4f47bbfe-de09-446a-957e-68920b19e8f2" name="Upper" value="*">
+                      <elementDefinition Id="05141556-f6c3-4bb7-b01b-8f9e1b0ff583" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="08b2f6d9-13a8-42d0-8929-b6fd5e94035b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="77c8bf4d-392d-4dfc-966c-c71c15b26e71" name="Farvoritter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cf825e36-8bbe-4a93-9b38-e729f7bbda36" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="00dffb03-8f76-453b-90b2-a1084d94b6b5" />
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property Id="931568ba-c568-4e63-a20f-fb3ccacdc922" name="Tidspunkt" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="85d35b28-bb5c-4e46-9052-d2e230777544" />
           </property>
-          <property Id="26133fcc-5051-49f7-a56e-cd19841fcc27" name="Band" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="7b55714b-4d87-4dac-aea3-489d3794baca" />
-          </property>
-          <property Id="97580eb7-777b-478f-8018-e01ec8bd0d95" name="Pris" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="7cb72fdd-7011-435e-94cb-50cc9f885048" />
+          <property Id="7c36476f-add8-4255-84b6-965d788c9d31" name="Dato" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2bdac3eb-7bb1-467b-82f1-759a4d2a0610" />
           </property>
         </ownedAttributesInternal>
       </class>
@@ -119,8 +130,68 @@
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d0092370-0cd4-4530-b8c9-7b9e5ecf3f9f" name="Band" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d33b639f-b400-424b-b92f-6b63b3b59c7d" />
+        <targetEnds>
+          <association Id="e9d845d3-bc46-427a-a2c6-778764f0c94d" isDerived="false" sourceEndRoleName="Band" targetEndRoleName="Koncert" isLeaf="false" isAbstract="false">
+            <classMoniker Id="add58e81-11ad-4641-a032-dd8bfda4be8c" LastKnownName="Koncert" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="12356ccb-0816-416a-86db-06413a730fcb" name="Band" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b2f806fd-fc03-4afa-82f2-187f48aca32f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6272c4bd-e90e-4ced-9165-38ed3cb6d7cd" name="Koncert" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="0ee90dad-a7c9-412c-bb5b-c942b3fdf9e0" name="Lower" value="*">
+                      <elementDefinition Id="38da4907-25bb-4406-b7b1-a35d7b8946e0" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="7cdd03e6-ca15-4ae6-b62d-c35594223941" name="Upper" value="*">
+                      <elementDefinition Id="d4365524-2d82-46ce-8863-69f1a40edd47" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="e1152c69-c21b-4464-83de-692dd511085e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7da7071b-b261-404e-8d2b-55c708801202" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="7c21ffc1-737e-40ec-951d-1383eecd1f65" name="Navn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f93ad75a-f755-4b6e-88a7-8cf175673731" />
+          </property>
+          <property Id="39cb2d4c-79bf-4d1c-9b43-e1ddd9a600f3" name="Beskrivelse" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1d699f1a-9a7b-4aad-aa5a-8385a723e3c7" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a11af213-61e4-4a94-8c0a-39ba54740cb1" name="Farvoritter" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b73ed4e6-4c01-440f-bba9-0e237ecf34fa" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="7f69b5b5-39b4-4d0c-8a21-3d7bf4d079c7" name="ModelingProject1">
     <elementDefinition Id="eab101c5-b85e-4c48-95df-c8934427dcf2" />
+    <profileInstances>
+      <packageHasProfileInstances Id="3e3bb361-1bd5-4252-9e7b-86cdc4cb6432">
+        <profileInstance Id="19c017db-e7d9-4ac0-bf26-157216f31595" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="06fee18b-1a28-4b3b-bae8-f336918ebedb">
+        <profileInstance Id="c5c108de-1d06-4a71-963b-89d49c9b0099" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>
