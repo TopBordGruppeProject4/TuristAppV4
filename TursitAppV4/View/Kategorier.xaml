@@ -52,20 +52,20 @@
             <TextBlock x:Name="pageTitle" Text="Skal være navnet på genren" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
 				IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
         </Grid>
-        <ListView HorizontalAlignment="Left" Height="458" Margin="82,75,0,0" Grid.Row="1" VerticalAlignment="Top" Width="236" ItemsSource="{Binding SelectedKategori.ListeAfKoncerter}"/>
+        <ListView HorizontalAlignment="Left" Height="458" Margin="82,75,0,0" Grid.Row="1" VerticalAlignment="Top" Width="236" ItemsSource="{Binding SelectedKategori.ListeAfKoncerter, Mode=TwoWay}" SelectedItem="{Binding SelectedKoncert, Mode=TwoWay}"/>
         <TextBlock HorizontalAlignment="Left" Height="40" Margin="399,75,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Artist" VerticalAlignment="Top" Width="150"  FontSize="22"/>
-        <TextBlock HorizontalAlignment="Left" Height="40" Margin="399,120,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedKategori.ListeAfKoncerter[0].Band.Navn}" VerticalAlignment="Top" Width="150" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="399,120,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedKoncert.Band.Navn, Mode=TwoWay}" VerticalAlignment="Top" Width="150" FontSize="22"/>
         <TextBlock HorizontalAlignment="Left" Height="40" Margin="762,75,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Spillested" VerticalAlignment="Top" Width="150" FontSize="22"/>
-        <TextBlock HorizontalAlignment="Left" Height="40" Margin="762,120,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedKategori.ListeAfKoncerter[0].Spillested.Navn}" VerticalAlignment="Top" Width="150" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="762,120,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedKoncert.Spillested.Navn, Mode=TwoWay}" VerticalAlignment="Top" Width="150" FontSize="22"/>
         <TextBlock HorizontalAlignment="Left" Height="40" Margin="762,193,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Dato" VerticalAlignment="Top" Width="150" FontSize="22"/>
-        <TextBlock HorizontalAlignment="Left" Height="40" Margin="762,238,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedKategori.ListeAfKoncerter[0].Dato}" VerticalAlignment="Top" Width="150" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="762,238,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedKoncert.Dato, Mode=TwoWay}" VerticalAlignment="Top" Width="150" FontSize="22"/>
         <TextBlock HorizontalAlignment="Left" Height="40" Margin="762,323,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Tidspunkt" VerticalAlignment="Top" Width="150" FontSize="22"/>
-        <TextBlock HorizontalAlignment="Left" Height="40" Margin="762,368,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedKategori.ListeAfKoncerter[0].Tidspunkt}" VerticalAlignment="Top" Width="150" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="762,368,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedKoncert.Tidspunkt, Mode=TwoWay}" VerticalAlignment="Top" Width="150" FontSize="22"/>
         <TextBlock HorizontalAlignment="Left" Height="40" Margin="399,193,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Beskrivelse" VerticalAlignment="Top" Width="150" FontSize="22"/>
-        <TextBlock HorizontalAlignment="Left" Height="295" Margin="399,238,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedKategori.ListeAfKoncerter[0].Band.Beskrivelse}" VerticalAlignment="Top" Width="262" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="295" Margin="399,238,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedKoncert.Band.Beskrivelse, Mode=TwoWay}" VerticalAlignment="Top" Width="262" FontSize="22"/>
         <TextBlock HorizontalAlignment="Left" Height="40" Margin="1050,193,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Adresse" VerticalAlignment="Top" Width="150" FontSize="22"/>
-        <TextBlock HorizontalAlignment="Left" Height="40" Margin="1050,238,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedKategori.ListeAfKoncerter[0].Spillested.Adresse}" VerticalAlignment="Top" Width="150" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="59" Margin="1050,238,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedKoncert.Spillested.Adresse, Mode=TwoWay}" VerticalAlignment="Top" Width="150" FontSize="22"/>
         <TextBlock HorizontalAlignment="Left" Height="40" Margin="1050,323,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Hjemmeside" VerticalAlignment="Top" Width="150" FontSize="22"/>
-        <TextBlock HorizontalAlignment="Left" Height="40" Margin="1050,368,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedKategori.ListeAfKoncerter[0].Spillested.Hjemmeside}" VerticalAlignment="Top" Width="150" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="1050,368,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedKoncert.Spillested.Hjemmeside, Mode=TwoWay}" VerticalAlignment="Top" Width="150" FontSize="22"/>
     </Grid>
 </Page>
