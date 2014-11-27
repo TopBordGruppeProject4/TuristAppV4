@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
   dslVersion="1.0.0.0"
   Id="eb4eb1cc-fd92-4171-8114-daf01b3da49c"
   name="Model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -371,8 +371,8 @@
         isActiveClass="false">
         <ownedAttributesInternal>
           <property
-            Id="625217ae-4f06-4829-a271-b30366d653d8"
-            name="Bands"
+            Id="2f83cf1e-e55f-485c-aca0-5650fbab4a10"
+            name="Navn"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -383,8 +383,26 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="167ca0d8-c3e8-4a3e-a72b-f3cf2a4843e5"
-                LastKnownName="Dictionary&lt;band,Beskrivelse&gt;"
+                Id="b247a834-b472-4506-8173-856be9f97737"
+                LastKnownName="string"
+                LastKnownLocation="Package_1044.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="96132817-087d-4166-9112-93c88ca77a43"
+            name="Beskrivelse"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="b247a834-b472-4506-8173-856be9f97737"
+                LastKnownName="string"
                 LastKnownLocation="Package_1044.uml" />
             </type_NamedElement>
           </property>
@@ -498,7 +516,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="b247a834-b472-4506-8173-856be9f97737"
+                LastKnownName="string"
+                LastKnownLocation="Package_1044.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="ca972b83-8b83-4c71-ad69-26076a29452d"
             name="Navn"
@@ -509,7 +534,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="b247a834-b472-4506-8173-856be9f97737"
+                LastKnownName="string"
+                LastKnownLocation="Package_1044.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="bf8aaef0-f1a4-4186-a9c5-2a93ebcae946"
             name="Hjemmeside"
@@ -520,7 +552,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="b247a834-b472-4506-8173-856be9f97737"
+                LastKnownName="string"
+                LastKnownLocation="Package_1044.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
