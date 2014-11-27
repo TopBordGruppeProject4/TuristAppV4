@@ -37,6 +37,7 @@ namespace TursitAppV4.Viewmodel
         public static Kategori RockKategori = new Kategori("Rock",new ObservableCollection<Koncert>(),  "placeholder");
         Koncert DADkKoncert = new Koncert(DAD, "kl.20:00", "d.2-2-2020", Gimle);
         Koncert MagtensKorridorkKoncert = new Koncert(MagtensKorridor,"kl:19:00","d.2-02-2020",Paramount);
+        
 
         public static Kategori PopKategori = new Kategori("Pop", new ObservableCollection<Koncert>(),  "placeholder");
         Koncert MedinakKoncert = new Koncert(Medina,"kl.15:00","D.30-4-2015",RoskildeKongresscenter);
@@ -54,15 +55,19 @@ namespace TursitAppV4.Viewmodel
 
         public MainViewModel()
         {
+            RockKategori.ListeAfKoncerter.Clear();
             RockKategori.ListeAfKoncerter.Add(DADkKoncert);
             RockKategori.ListeAfKoncerter.Add(MagtensKorridorkKoncert);
             
+            PopKategori.ListeAfKoncerter.Clear();
             PopKategori.ListeAfKoncerter.Add(MedinakKoncert);
             PopKategori.ListeAfKoncerter.Add(RasmusSeebachkKoncert);
 
+            TecnoKategori.ListeAfKoncerter.Clear();
             TecnoKategori.ListeAfKoncerter.Add(DjTiëstoKoncert);
             TecnoKategori.ListeAfKoncerter.Add(DeadMau5kKoncert);
 
+            IndieKategori.ListeAfKoncerter.Clear();
             IndieKategori.ListeAfKoncerter.Add(VonDüKoncert);
             IndieKategori.ListeAfKoncerter.Add(RedwarszawakKoncert);
         }
