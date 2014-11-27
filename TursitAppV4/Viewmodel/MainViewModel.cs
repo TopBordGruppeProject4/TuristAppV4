@@ -7,28 +7,22 @@ using TursitAppV4.Model;
 
 namespace TursitAppV4.Viewmodel
 {
-   public class MainViewModel
+    class MainViewModel
     {
-        Kategori SelectedKategori { get; set; }
+        public Kategori SelectedKategori { get; set; }
 
-        static Spillested Paramount = new Spillested("Paramount", "Placehonder", "eriksvej 40 , 4000 Roskilde");
-        static Spillested Gimle = new Spillested("Gimle", "Placeholder", "Helligkorsvej 2, 4000 Roskilde");
-        static Spillested RoskildeKongresscenter = new Spillested("Roskilde Kongresscenter", "placeholder", "Møllehusvej 15, 4000 Roskilde");
-
-        static Band DAD = new Band("DAD", "Placeholder");
-        static Band MagtensKorridor = new Band("Magtens Korridor", "Placeholder");
-        static Band Medina = new Band("Medina", "Placeholder");
-        static Band RasmusSeebach = new Band("Rasmus Seebach", "placeholder");
-        static Band DjTiësto = new Band("DJTiësto", "placeholder");
-        static Band DeadMau5 = new Band("DeadMau5", "placeholder");
-        static Band VonDü = new Band("Von Dü", "placeholder");
-        static Band Redwarszawa = new Band("Red warszawa", "placeholder");
-
+        static Spillested Paramount = new Spillested("Paramount","Placehonder","eriksvej 40 , 4000 Roskilde");
+        static Spillested Gimle = new Spillested("Gimle","Placeholder","Helligkorsvej 2, 4000 Roskilde");
+        static Spillested RoskildeKongresscenter = new Spillested("Roskilde Kongresscenter", "placeholder","Møllehusvej 15, 4000 Roskilde");
         
-        public MainViewModel()
-        {
-
-        
+        static Band DAD = new Band("DAD","Placeholder");
+        static Band MagtensKorridor = new Band("Magtens Korridor","Placeholder");
+        static Band Medina = new Band("Medina","Placeholder");
+        static Band RasmusSeebach = new Band("Rasmus Seebach","placeholder");
+        static Band DjTiësto = new Band("DJTiësto","placeholder");
+        static Band DeadMau5 = new Band("DeadMau5","placeholder");
+        static Band VonDü = new Band("Von Dü","placeholder");
+        static Band Redwarszawa = new Band("Red warszawa","placeholder");
 
         Kategori RockKategori = new Kategori("Rock", "placeholder");
         Koncert DADkKoncert = new Koncert(DAD, "kl.20:00", "d.2-2-2020", Gimle);
@@ -47,6 +41,8 @@ namespace TursitAppV4.Viewmodel
         Koncert VonDüKoncert = new Koncert(VonDü, "kl.21:00","d.14-11-2015",Gimle);
         Koncert RedwarszawakKoncert = new Koncert(Redwarszawa,"kl.21:00","d.4-8-2015", Paramount);
 
+        public MainViewModel()
+        {
             RockKategori.ListeAfKoncerter.Add(DADkKoncert);
             RockKategori.ListeAfKoncerter.Add(MagtensKorridorkKoncert);
             

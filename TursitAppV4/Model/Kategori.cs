@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TursitAppV4.Model
 {
-   public class Kategori
+    class Kategori
     {
         public string Genre { get; set; }
         public ObservableCollection<Koncert> ListeAfKoncerter { get; set; }

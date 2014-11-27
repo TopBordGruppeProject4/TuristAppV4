@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TursitAppV4.Model
 {
-    public class Koncert
+    class Koncert
     {
         public Band Band { get; set; }
         public string Tidspunkt { get; set; }

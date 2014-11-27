@@ -47,7 +47,7 @@
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
         </Grid>
         <ListView HorizontalAlignment="Left" Height="458" Margin="82,75,0,0" Grid.Row="1" VerticalAlignment="Top" Width="236"/>
-        <TextBlock HorizontalAlignment="Left" Height="40" Margin="399,75,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Artist" VerticalAlignment="Top" Width="150"  FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="399,75,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Artist" VerticalAlignment="Top" Width="150" SelectionChanged="TextBlock_SelectionChanged" FontSize="22"/>
         <TextBlock HorizontalAlignment="Left" Height="40" Margin="399,120,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Artist binding" VerticalAlignment="Top" Width="150" FontSize="22"/>
         <TextBlock HorizontalAlignment="Left" Height="40" Margin="762,75,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Spillested" VerticalAlignment="Top" Width="150" FontSize="22"/>
         <TextBlock HorizontalAlignment="Left" Height="40" Margin="762,120,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Spilleted binding" VerticalAlignment="Top" Width="150" FontSize="22"/>
