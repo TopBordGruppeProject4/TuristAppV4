@@ -441,56 +441,6 @@
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation
-            Id="82a4d722-228a-4365-b944-30cfe2b35ef3"
-            name="TilføjKoncerter"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="433ca2ce-c003-4359-8a6e-950d7a87ac68"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="4ea202f9-f4f2-4287-be69-244e6f950389"
-                      LastKnownName="Void"
-                      LastKnownLocation="Package_1044.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="f6a4b93d-e839-4d5b-a3d4-3a514c8c47ba"
-            name="FjernKoncerter"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="121daa4a-7bb1-460e-b342-be13e84186e1"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="4ea202f9-f4f2-4287-be69-244e6f950389"
-                      LastKnownName="Void"
-                      LastKnownLocation="Package_1044.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -562,6 +512,124 @@
           </property>
         </ownedAttributesInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7eb13a8e-564f-487b-bca6-8b5b2f19568d"
+        name="FileHandler"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="90c4b3d9-6ee3-4104-b5b3-45d97c096a19"
+            isDerived="false"
+            sourceEndRoleName="FileHandler"
+            targetEndRoleName="Koncerthandler"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="edebe63f-d8d5-4d71-9b2d-9d4d4cbec06e"
+              LastKnownName="Koncerthandler"
+              LastKnownLocation="Package1_1043.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0a2708c1-936b-4f19-95c1-e3b92d61cced"
+                  name="FileHandler"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="41f70ae7-fe2d-4f37-b00a-87cb4486547b"
+                  name="Koncerthandler"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="4307d6c6-1a3b-4a54-9ff8-404143484b0a"
+            name="Attribute1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="180bd8dd-29ec-419a-9c4b-e924ffdc4b5d"
+            name="Save"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ce3f2534-4623-413e-931b-0b814e026607"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="4ede4c34-935e-49c7-a859-e4eb68c90184"
+                      LastKnownName="void"
+                      LastKnownLocation="Package1_1043.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3d63c6f3-7b0d-4a4a-8885-661ce128dddb"
+            name="Load"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="446060d5-d9a6-43fa-bda1-133d4383745b"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="2920b794-6f5f-4a9b-99d1-7763fbb1881d"
+                      LastKnownName="Task&lt;&gt;"
+                      LastKnownLocation="Package_1044.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="2920b794-6f5f-4a9b-99d1-7763fbb1881d"
+        name="Task&lt;&gt;" />
     </packageHasNamedElement>
   </packagedElements>
 </package>
