@@ -8,27 +8,26 @@
     x:Class="TursitAppV4.View.MainPage"
     mc:Ignorable="d">
 
-    <Page.DataContext>
-        <Viewmodel:MainViewModel/>
-    </Page.DataContext>
+    
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+       
         <Button Content="" HorizontalAlignment="Left" Height="125" Margin="170,172,0,0" VerticalAlignment="Top" Width="350" Click="Button_Click">
             <Button.Background>
                 <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/Rock.png"/>
             </Button.Background>
         </Button>
-        <Button HorizontalAlignment="Left" Height="125" Margin="845,172,0,0" VerticalAlignment="Top" Width="350">
+        <Button HorizontalAlignment="Left" Height="125" Margin="845,172,0,0" VerticalAlignment="Top" Width="350" Click="Button_Click_1">
             <Button.Background>
                 <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/Pop.png"/>
             </Button.Background>
         </Button>
-        <Button Content="" HorizontalAlignment="Left" Height="125" Margin="170,349,0,0" VerticalAlignment="Top" Width="350">
+        <Button Content="" HorizontalAlignment="Left" Height="125" Margin="170,349,0,0" VerticalAlignment="Top" Width="350" Click="Button_Click_2">
             <Button.Background>
                 <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/Indie.png"/>
             </Button.Background>
         </Button>
-        <Button Content="" HorizontalAlignment="Left" Height="125" Margin="845,349,0,0" VerticalAlignment="Top" Width="350">
+        <Button Content="" HorizontalAlignment="Left" Height="125" Margin="845,349,0,0" VerticalAlignment="Top" Width="350" Click="Button_Click_3">
             <Button.Background>
                 <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/Techno.png"/>
             </Button.Background>

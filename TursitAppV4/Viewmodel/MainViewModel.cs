@@ -9,7 +9,7 @@ namespace TursitAppV4.Viewmodel
 {
     public class MainViewModel
     {
-        Kategori SelectedKategori { get; set; }
+       public static Kategori SelectedKategori { get; set; }
 
         static Spillested Paramount = new Spillested("Paramount","Placehonder","eriksvej 40 , 4000 Roskilde");
         static Spillested Gimle = new Spillested("Gimle","Placeholder","Helligkorsvej 2, 4000 Roskilde");
@@ -24,20 +24,20 @@ namespace TursitAppV4.Viewmodel
         static Band VonDü = new Band("Von Dü","placeholder");
         static Band Redwarszawa = new Band("Red warszawa","placeholder");
 
-        Kategori RockKategori = new Kategori("Rock", "placeholder");
+        public static Kategori RockKategori = new Kategori("Rock", "placeholder");
         Koncert DADkKoncert = new Koncert(DAD, "kl.20:00", "d.2-2-2020", Gimle);
         Koncert MagtensKorridorkKoncert = new Koncert(MagtensKorridor,"kl:19:00","d.2-02-2020",Paramount);
-        
-        Kategori PopKategori = new Kategori("Pop","placeholder");
+
+        public static Kategori PopKategori = new Kategori("Pop", "placeholder");
         Koncert MedinakKoncert = new Koncert(Medina,"kl.15:00","D.30-4-2015",RoskildeKongresscenter);
         Koncert RasmusSeebachkKoncert = new Koncert(RasmusSeebach,"kl.13:00","D.10-07-2015",RoskildeKongresscenter);
-        
-        Kategori TecnoKategori = new Kategori("Tecno","placeholder");
+
+        public static Kategori TecnoKategori = new Kategori("Tecno", "placeholder");
         Koncert DjTiëstoKoncert = new Koncert(DjTiësto, "kl.21:30", "d.3-6-2015", Gimle);
         Koncert DeadMau5kKoncert = new Koncert(DeadMau5,"kl.19:00","d.4-5-2016",RoskildeKongresscenter);
 
 
-        Kategori IndieKategori = new Kategori("Indie","placeholder");
+        public static Kategori IndieKategori = new Kategori("Indie", "placeholder");
         Koncert VonDüKoncert = new Koncert(VonDü, "kl.21:00","d.14-11-2015",Gimle);
         Koncert RedwarszawakKoncert = new Koncert(Redwarszawa,"kl.21:00","d.4-8-2015", Paramount);
 
