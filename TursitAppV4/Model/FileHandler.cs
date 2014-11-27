@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.Storage;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Newtonsoft.Json;
 
@@ -28,14 +30,34 @@ namespace TursitAppV4.Model
 
         public static async Task<ObservableCollection<Koncert>> Load()
         {
-            string playerData = await DeserializeSaveGameAsync(FileName);
-            return (ObservableCollection<Koncert>) JsonConvert.DeserializeObject(playerData, typeof(ObservableCollection<Koncert>));
+            string favoritData = await DeserializeSaveGameAsync(FileName);
+            if (favoritData != null)
+            {
+                return (ObservableCollection<Koncert>)JsonConvert.DeserializeObject(favoritData, typeof(ObservableCollection<Koncert>));
+            }
+            return null;
         }
 
         private static async Task<string> DeserializeSaveGameAsync(string fileName)
         {
-            StorageFile localFile = await ApplicationData.Current.LocalFolder.GetFileAsync(fileName);
-            return await FileIO.ReadTextAsync(localFile);
+            try
+            {
+                StorageFile localFile = await ApplicationData.Current.LocalFolder.GetFileAsync(fileName);
+                return await FileIO.ReadTextAsync(localFile);
+            }
+            catch (FileNotFoundException)
+            {
+                MessageDialog myDialog = new MessageDialog("Har du husket at gemme filen?", "Filen blev ikke fundet");
+                myDialog.ShowAsync();
+                return null;
+            }
+            catch (UnauthorizedAccessException)
+            {
+                MessageDialog myDialog = new MessageDialog("Kunne ikke få adgang til filen, beklager", "Manglende adgang");
+                myDialog.ShowAsync();
+                return null;
+            }
+            
         }
     }
 }
