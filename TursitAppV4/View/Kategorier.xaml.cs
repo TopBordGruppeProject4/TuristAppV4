@@ -1,4 +1,5 @@
-﻿using TursitAppV4.Common;
+﻿using Windows.UI.Popups;
+using TursitAppV4.Common;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -15,6 +16,8 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234237
+using TursitAppV4.Model;
+using TursitAppV4.Viewmodel;
 
 namespace TursitAppV4.View
 {
@@ -102,5 +105,19 @@ namespace TursitAppV4.View
         }
 
         #endregion
+
+        private void tilføjFavorit_button_Click(object sender, RoutedEventArgs e)
+        {
+            var koncert = koncert_listView.SelectedItem;
+            if (MainViewModel.FavoritKategori.ListeAfKoncerter.Contains(koncert))
+            {
+                MessageDialog myDialog = new MessageDialog("Den " + koncert.ToString() + " findes allerede i din favoritliste.");
+                myDialog.ShowAsync();
+            }
+            else
+            {
+                MainViewModel.TilføjFavorit(koncert);
+            }
+        }
     }
 }

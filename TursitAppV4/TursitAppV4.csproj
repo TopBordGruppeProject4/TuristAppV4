@@ -110,7 +110,6 @@
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Common\SuspensionManager.cs" />
     <Compile Include="Model\Band.cs" />
-    <Compile Include="Model\Farvoritter.cs" />
     <Compile Include="Model\FileHandler.cs" />
     <Compile Include="Model\Kategori.cs" />
     <Compile Include="Model\Koncert.cs" />
@@ -120,9 +119,6 @@
     <Compile Include="Viewmodel\KoncertHandler.cs" />
     <Compile Include="Viewmodel\MainViewModel.cs" />
     <Compile Include="Viewmodel\RelayCommand.cs" />
-    <Compile Include="View\Favoritter.xaml.cs">
-      <DependentUpon>Favoritter.xaml</DependentUpon>
-    </Compile>
     <Compile Include="View\Kategorier.xaml.cs">
       <DependentUpon>Kategorier.xaml</DependentUpon>
     </Compile>
@@ -156,10 +152,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="View\Favoritter.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="View\Kategorier.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

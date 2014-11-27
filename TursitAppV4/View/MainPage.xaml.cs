@@ -1,5 +1,9 @@
 ﻿// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
+
+using System.Collections.ObjectModel;
+using Windows.UI.Popups;
 using Windows.UI.Xaml.Controls;
+using TursitAppV4.Model;
 using TursitAppV4.Viewmodel;
 
 namespace TursitAppV4.View
@@ -36,6 +40,17 @@ namespace TursitAppV4.View
         {
             MainViewModel.SelectedKategori = MainViewModel.TecnoKategori;
             this.Frame.Navigate(typeof(Kategorier));
+        }
+
+        private async void Button_Click_4(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        {
+            ObservableCollection<Koncert> fileData = await FileHandler.Load();
+            if (fileData != null)
+            {
+                MainViewModel.FavoritKategori.ListeAfKoncerter = fileData;
+                MainViewModel.SelectedKategori = MainViewModel.FavoritKategori;
+                this.Frame.Navigate(typeof (Kategorier));
+            }
         }
     }
 }

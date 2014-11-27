@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Popups;
 using TursitAppV4.Annotations;
 using TursitAppV4.Model;
 
@@ -19,6 +20,23 @@ namespace TursitAppV4.Viewmodel
         {
             get { return _selectedKoncert; }
             set { _selectedKoncert = value;OnPropertyChanged("SelectedKoncert"); }
+        }
+
+        public static void TilføjFavorit(object koncert)
+        {
+            Koncert koncertSelected = (Koncert) koncert;
+            FavoritKategori.ListeAfKoncerter.Add(koncertSelected);
+
+            string favoritter = "";
+            foreach (Koncert koncert1 in FavoritKategori.ListeAfKoncerter)
+            {
+                favoritter += koncert1.ToString() + "\n";
+            }
+
+            FileHandler.Save(FavoritKategori.ListeAfKoncerter);
+
+            MessageDialog myDialog = new MessageDialog(favoritter);
+            myDialog.ShowAsync();
         }
 
         static Spillested Paramount = new Spillested("Paramount","Placehonder","eriksvej 40 , 4000 Roskilde");
@@ -51,6 +69,9 @@ namespace TursitAppV4.Viewmodel
         public static Kategori IndieKategori = new Kategori("Indie", new ObservableCollection<Koncert>(),  "placeholder");
         Koncert VonDüKoncert = new Koncert(VonDü, "kl.21:00","d.14-11-2015",Gimle);
         Koncert RedwarszawakKoncert = new Koncert(Redwarszawa,"kl.21:00","d.4-8-2015", Paramount);
+
+        public static Kategori FavoritKategori = new Kategori("Favoritter", new ObservableCollection<Koncert>(), "placeholder");
+
         private Koncert _selectedKoncert;
 
         public MainViewModel()
