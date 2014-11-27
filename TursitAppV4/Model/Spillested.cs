@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TursitAppV4.Model
 {
-    class Spillested
+    public class Spillested
     {
         public Spillested(string navn, string hjemmeside, string adresse)
         {
