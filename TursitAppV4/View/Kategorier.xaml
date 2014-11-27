@@ -54,9 +54,9 @@
         </Grid>
         <ListView HorizontalAlignment="Left" Height="458" Margin="82,75,0,0" Grid.Row="1" VerticalAlignment="Top" Width="236" ItemsSource="{Binding SelectedKategori.ListeAfKoncerter, Mode=TwoWay}" SelectedItem="{Binding SelectedKoncert, Mode=TwoWay}"/>
         <TextBlock HorizontalAlignment="Left" Height="40" Margin="399,75,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Artist" VerticalAlignment="Top" Width="150"  FontSize="22"/>
-        <TextBlock HorizontalAlignment="Left" Height="40" Margin="399,120,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedKoncert.Band.Navn, Mode=TwoWay}" VerticalAlignment="Top" Width="150" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="68" Margin="399,120,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedKoncert.Band.Navn, Mode=TwoWay}" VerticalAlignment="Top" Width="150" FontSize="22"/>
         <TextBlock HorizontalAlignment="Left" Height="40" Margin="762,75,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Spillested" VerticalAlignment="Top" Width="150" FontSize="22"/>
-        <TextBlock HorizontalAlignment="Left" Height="40" Margin="762,120,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedKoncert.Spillested.Navn, Mode=TwoWay}" VerticalAlignment="Top" Width="150" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="68" Margin="762,120,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedKoncert.Spillested.Navn, Mode=TwoWay}" VerticalAlignment="Top" Width="150" FontSize="22"/>
         <TextBlock HorizontalAlignment="Left" Height="40" Margin="762,193,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Dato" VerticalAlignment="Top" Width="150" FontSize="22"/>
         <TextBlock HorizontalAlignment="Left" Height="40" Margin="762,238,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedKoncert.Dato, Mode=TwoWay}" VerticalAlignment="Top" Width="150" FontSize="22"/>
         <TextBlock HorizontalAlignment="Left" Height="40" Margin="762,323,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Tidspunkt" VerticalAlignment="Top" Width="150" FontSize="22"/>
