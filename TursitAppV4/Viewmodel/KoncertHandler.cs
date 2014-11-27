@@ -8,5 +8,6 @@ namespace TursitAppV4.Viewmodel
 {
     class KoncertHandler
     {
+
     }
 }
