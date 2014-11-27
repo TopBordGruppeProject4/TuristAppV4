@@ -9,6 +9,8 @@ namespace TursitAppV4.Viewmodel
 {
     class MainViewModel
     {
+        public Kategori SelectedKategori { get; set; }
+
         static Spillested Paramount = new Spillested("Paramount","Placehonder","eriksvej 40 , 4000 Roskilde");
         static Spillested Gimle = new Spillested("Gimle","Placeholder","Helligkorsvej 2, 4000 Roskilde");
         static Spillested RoskildeKongresscenter = new Spillested("Roskilde Kongresscenter", "placeholder","Møllehusvej 15, 4000 Roskilde");
@@ -22,7 +24,7 @@ namespace TursitAppV4.Viewmodel
         static Band VonDü = new Band("Von Dü","placeholder");
         static Band Redwarszawa = new Band("Red warszawa","placeholder");
 
-        private Kategori RockKategori = new Kategori("Rock", "placeholder");
+        Kategori RockKategori = new Kategori("Rock", "placeholder");
         Koncert DADkKoncert = new Koncert(DAD, "kl.20:00", "d.2-2-2020", Gimle);
         Koncert MagtensKorridorkKoncert = new Koncert(MagtensKorridor,"kl:19:00","d.2-02-2020",Paramount);
         
