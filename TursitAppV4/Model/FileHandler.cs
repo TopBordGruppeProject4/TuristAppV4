@@ -14,7 +14,7 @@ namespace TursitAppV4.Model
     {
         private static string FileName = "FavoritSave.dat";
 
-        public static async void SaveGameAsJson(ObservableCollection<Koncert> favoritData)
+        public static async void Save(ObservableCollection<Koncert> favoritData)
         {
             string playerDataAsJson = JsonConvert.SerializeObject(favoritData);
             SerializeSaveGameAsync(playerDataAsJson, FileName);
@@ -26,7 +26,7 @@ namespace TursitAppV4.Model
             await FileIO.WriteTextAsync(localFile, playerDataJsonString);
         }
 
-        public static async Task<ObservableCollection<Koncert>> LoadGameFromJson()
+        public static async Task<ObservableCollection<Koncert>> Load()
         {
             string playerData = await DeserializeSaveGameAsync(FileName);
             return (ObservableCollection<Koncert>) JsonConvert.DeserializeObject(playerData, typeof(ObservableCollection<Koncert>));
