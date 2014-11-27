@@ -19,7 +19,7 @@ namespace TursitAppV4.Model
 
         public override string ToString()
         {
-            return string.Format("Navn: {0}, Beskrivelse: {1}", Navn, Beskrivelse);
+            return Navn.ToString(); //string.Format("Navn: {0}, Beskrivelse: {1}", Navn, Beskrivelse);
         }
     }
 }

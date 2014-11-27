@@ -1,13 +1,14 @@
 ﻿<Page
-    x:Name="pageRoot"
-    x:Class="TursitAppV4.View.Kategorier"
-    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:TursitAppV4.View"
     xmlns:common="using:TursitAppV4.Common"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Viewmodel="using:TursitAppV4.Viewmodel"
+    x:Name="pageRoot"
+    x:Class="TursitAppV4.View.Kategorier"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Mode=Self}}"
     mc:Ignorable="d">
 
     <Page.Resources>
@@ -21,6 +22,9 @@
         * Row 1 contains the rest of the page layout
     -->
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.DataContext>
+            <Viewmodel:MainViewModel/>
+        </Grid.DataContext>
         <Grid.ChildrenTransitions>
             <TransitionCollection>
                 <EntranceThemeTransition/>
@@ -31,6 +35,8 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
+        
+
         <!-- Back button and page title -->
         <Grid>
             <Grid.ColumnDefinitions>
@@ -38,28 +44,28 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Button x:Name="backButton" Margin="39,59,39,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
-                        Style="{StaticResource NavigationBackButtonNormalStyle}"
-                        VerticalAlignment="Top"
-                        AutomationProperties.Name="Back"
-                        AutomationProperties.AutomationId="BackButton"
-                        AutomationProperties.ItemType="Navigation Button"/>
+				Style="{StaticResource NavigationBackButtonNormalStyle}"
+				VerticalAlignment="Top"
+				AutomationProperties.Name="Back"
+				AutomationProperties.AutomationId="BackButton"
+				AutomationProperties.ItemType="Navigation Button"/>
             <TextBlock x:Name="pageTitle" Text="Skal være navnet på genren" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
-                        IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
+				IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
         </Grid>
-        <ListView HorizontalAlignment="Left" Height="458" Margin="82,75,0,0" Grid.Row="1" VerticalAlignment="Top" Width="236"/>
+        <ListView HorizontalAlignment="Left" Height="458" Margin="82,75,0,0" Grid.Row="1" VerticalAlignment="Top" Width="236" ItemsSource="{Binding SelectedKategori.ListeAfKoncerter}"/>
         <TextBlock HorizontalAlignment="Left" Height="40" Margin="399,75,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Artist" VerticalAlignment="Top" Width="150"  FontSize="22"/>
-        <TextBlock HorizontalAlignment="Left" Height="40" Margin="399,120,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Artist binding" VerticalAlignment="Top" Width="150" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="399,120,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedKategori.ListeAfKoncerter[0].Band.Navn}" VerticalAlignment="Top" Width="150" FontSize="22"/>
         <TextBlock HorizontalAlignment="Left" Height="40" Margin="762,75,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Spillested" VerticalAlignment="Top" Width="150" FontSize="22"/>
-        <TextBlock HorizontalAlignment="Left" Height="40" Margin="762,120,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Spilleted binding" VerticalAlignment="Top" Width="150" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="762,120,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedKategori.ListeAfKoncerter[0].Spillested.Navn}" VerticalAlignment="Top" Width="150" FontSize="22"/>
         <TextBlock HorizontalAlignment="Left" Height="40" Margin="762,193,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Dato" VerticalAlignment="Top" Width="150" FontSize="22"/>
-        <TextBlock HorizontalAlignment="Left" Height="40" Margin="762,238,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Dato binding" VerticalAlignment="Top" Width="150" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="762,238,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedKategori.ListeAfKoncerter[0].Dato}" VerticalAlignment="Top" Width="150" FontSize="22"/>
         <TextBlock HorizontalAlignment="Left" Height="40" Margin="762,323,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Tidspunkt" VerticalAlignment="Top" Width="150" FontSize="22"/>
-        <TextBlock HorizontalAlignment="Left" Height="40" Margin="762,368,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Tidspunkt binding" VerticalAlignment="Top" Width="150" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="762,368,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedKategori.ListeAfKoncerter[0].Tidspunkt}" VerticalAlignment="Top" Width="150" FontSize="22"/>
         <TextBlock HorizontalAlignment="Left" Height="40" Margin="399,193,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Beskrivelse" VerticalAlignment="Top" Width="150" FontSize="22"/>
-        <TextBlock HorizontalAlignment="Left" Height="295" Margin="399,238,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Beskrivelse binding" VerticalAlignment="Top" Width="262" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="295" Margin="399,238,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedKategori.ListeAfKoncerter[0].Band.Beskrivelse}" VerticalAlignment="Top" Width="262" FontSize="22"/>
         <TextBlock HorizontalAlignment="Left" Height="40" Margin="1050,193,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Adresse" VerticalAlignment="Top" Width="150" FontSize="22"/>
-        <TextBlock HorizontalAlignment="Left" Height="40" Margin="1050,238,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Adresse Binding" VerticalAlignment="Top" Width="150" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="1050,238,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedKategori.ListeAfKoncerter[0].Spillested.Adresse}" VerticalAlignment="Top" Width="150" FontSize="22"/>
         <TextBlock HorizontalAlignment="Left" Height="40" Margin="1050,323,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Hjemmeside" VerticalAlignment="Top" Width="150" FontSize="22"/>
-        <TextBlock HorizontalAlignment="Left" Height="40" Margin="1050,368,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Hjemmeside binding" VerticalAlignment="Top" Width="150" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="1050,368,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedKategori.ListeAfKoncerter[0].Spillested.Hjemmeside}" VerticalAlignment="Top" Width="150" FontSize="22"/>
     </Grid>
 </Page>

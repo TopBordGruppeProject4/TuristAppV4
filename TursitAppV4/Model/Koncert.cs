@@ -23,7 +23,8 @@ namespace TursitAppV4.Model
 
         public override string ToString()
         {
-            return string.Format("Band: {0}, Tidspunkt: {1}, Dato: {2}, Spillested: {3}", Band, Tidspunkt, Dato, Spillested);
+            return Band.ToString();
+                //string.Format("Band: {0}, Tidspunkt: {1}, Dato: {2}, Spillested: {3}", Band, Tidspunkt, Dato, Spillested);
         }
     }
 }
