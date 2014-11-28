@@ -120,6 +120,7 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <None Include="TestPlan\Test Plan.docx" />
     <None Include="TursitAppV4Tests_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
