@@ -22,10 +22,17 @@ namespace TursitAppV4.Viewmodel
             set { _selectedKoncert = value;OnPropertyChanged("SelectedKoncert"); }
         }
 
-        public static void TilføjFavorit(object koncert)
+        public static void FavoritCommand(object koncert, string command)
         {
             Koncert koncertSelected = (Koncert) koncert;
-            FavoritKategori.ListeAfKoncerter.Add(koncertSelected);
+            if (command == "tilføj")
+            {
+                FavoritKategori.ListeAfKoncerter.Add(koncertSelected);
+            }
+            else if (command == "fjern")
+            {
+                FavoritKategori.ListeAfKoncerter.Remove(koncertSelected);
+            }
 
             string favoritter = "";
             foreach (Koncert koncert1 in FavoritKategori.ListeAfKoncerter)
@@ -33,10 +40,19 @@ namespace TursitAppV4.Viewmodel
                 favoritter += koncert1.ToString() + "\n";
             }
 
-            FileHandler.Save(FavoritKategori.ListeAfKoncerter);
+            KoncertHandler koncertHandler = new KoncertHandler();
+            koncertHandler.SaveFavoritter(FavoritKategori.ListeAfKoncerter);
 
-            MessageDialog myDialog = new MessageDialog(favoritter);
-            myDialog.ShowAsync();
+            if (command == "tilføj")
+            {
+                MessageDialog myDialog = new MessageDialog(favoritter);
+                myDialog.ShowAsync();
+            }
+            else if (command == "fjern")
+            {
+                MessageDialog myDialog = new MessageDialog(koncertSelected.Band + " er fjernet fra din favoritliste.");
+                myDialog.ShowAsync();
+            }
         }
 
         static Spillested Paramount = new Spillested("Paramount","Placehonder","eriksvej 40 , 4000 Roskilde");

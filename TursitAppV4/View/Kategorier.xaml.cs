@@ -54,6 +54,11 @@ namespace TursitAppV4.View
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += navigationHelper_LoadState;
             this.navigationHelper.SaveState += navigationHelper_SaveState;
+
+            if (MainViewModel.SelectedKategori == MainViewModel.FavoritKategori)
+            {
+                tilføjFavorit_button.Visibility = Visibility.Collapsed;
+            }
         }
 
         /// <summary>
@@ -109,14 +114,31 @@ namespace TursitAppV4.View
         private void tilføjFavorit_button_Click(object sender, RoutedEventArgs e)
         {
             var koncert = koncert_listView.SelectedItem;
-            if (MainViewModel.FavoritKategori.ListeAfKoncerter.Contains(koncert))
+            bool koncertPresent = MainViewModel.FavoritKategori.ListeAfKoncerter.Any(item => item == koncert);
+            if (koncertPresent)
             {
-                MessageDialog myDialog = new MessageDialog("Den " + koncert.ToString() + " findes allerede i din favoritliste.");
+                MessageDialog myDialog = new MessageDialog(koncert.ToString() + " findes allerede i din favoritliste.");
                 myDialog.ShowAsync();
             }
             else
             {
-                MainViewModel.TilføjFavorit(koncert);
+                MainViewModel.FavoritCommand(koncert, "tilføj");
+            }
+        }
+
+        private void fjernFavorit_button_Click(object sender, RoutedEventArgs e)
+        {
+            var koncert = koncert_listView.SelectedItem;
+            bool koncertPresent = MainViewModel.FavoritKategori.ListeAfKoncerter.Any(item => item == koncert);
+            if (koncertPresent)
+            {
+                MainViewModel.FavoritCommand(koncert, "fjern");
+                
+            }
+            else
+            {
+                MessageDialog myDialog = new MessageDialog(koncert.ToString() + " findes ikke i din favoritliste.");
+                myDialog.ShowAsync();
             }
         }
     }

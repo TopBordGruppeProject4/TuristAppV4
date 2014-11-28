@@ -47,7 +47,7 @@ namespace TursitAppV4.Model
             }
             catch (FileNotFoundException)
             {
-                MessageDialog myDialog = new MessageDialog("Har du husket at gemme filen?", "Filen blev ikke fundet");
+                MessageDialog myDialog = new MessageDialog("Du har ikke tilføjet nogle favoritter.", "Filen blev ikke fundet");
                 myDialog.ShowAsync();
                 return null;
             }

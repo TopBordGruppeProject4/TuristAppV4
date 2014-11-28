@@ -68,5 +68,6 @@
         <TextBlock HorizontalAlignment="Left" Height="40" Margin="1050,323,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Hjemmeside" VerticalAlignment="Top" Width="150" FontSize="22"/>
         <TextBlock HorizontalAlignment="Left" Height="40" Margin="1050,368,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedKoncert.Spillested.Hjemmeside, Mode=TwoWay}" VerticalAlignment="Top" Width="150" FontSize="22"/>
         <Button x:Name="tilføjFavorit_button" Content="Tilføj favorit" HorizontalAlignment="Left" Margin="80,0,0,20" Grid.Row="1" VerticalAlignment="Bottom" Click="tilføjFavorit_button_Click"/>
+        <Button x:Name="fjernFavorit_button" Content="Fjern favorit" HorizontalAlignment="Left" Margin="250,0,0,20" Grid.Row="1" VerticalAlignment="Bottom" Click="fjernFavorit_button_Click"/>
     </Grid>
 </Page>

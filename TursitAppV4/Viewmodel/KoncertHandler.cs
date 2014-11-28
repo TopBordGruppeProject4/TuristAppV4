@@ -20,7 +20,11 @@ namespace TursitAppV4.Viewmodel
 
         public async void LoadFavoritter()
         {
-            await FileHandler.Load();
+            var favorites = await FileHandler.Load();
+            if (favorites != null)
+            {
+                MainViewModel.FavoritKategori.ListeAfKoncerter = favorites;
+            }
         }
     }
 }

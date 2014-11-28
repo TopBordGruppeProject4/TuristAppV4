@@ -48,8 +48,16 @@ namespace TursitAppV4.View
             if (fileData != null)
             {
                 MainViewModel.FavoritKategori.ListeAfKoncerter = fileData;
-                MainViewModel.SelectedKategori = MainViewModel.FavoritKategori;
-                this.Frame.Navigate(typeof (Kategorier));
+                if (fileData.Count > 0)
+                {
+                    MainViewModel.SelectedKategori = MainViewModel.FavoritKategori;
+                    this.Frame.Navigate(typeof (Kategorier));
+                }
+                else
+                {
+                    MessageDialog myDialog = new MessageDialog("Din favoritliste er tom");
+                    myDialog.ShowAsync();
+                }
             }
         }
     }
