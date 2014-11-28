@@ -45,6 +45,9 @@
     <Content Include="ModelDefinition\Package_1044.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Præsentation\Paced Elementerne.docx">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Requirements\Usecase.docx">
       <SubType>Content</SubType>
     </Content>
@@ -61,6 +64,7 @@
     </Content>
     <Folder Include="Business Model" />
     <Folder Include="Design" />
+    <Folder Include="Præsentation\" />
     <Folder Include="Requirements" />
   </ItemGroup>
 </Project>
