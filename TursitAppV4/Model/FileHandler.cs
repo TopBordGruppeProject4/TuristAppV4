@@ -12,7 +12,7 @@ using Newtonsoft.Json;
 
 namespace TursitAppV4.Model
 {
-    class FileHandler
+   public class FileHandler
     {
         private static string FileName = "FavoritSave.dat";
 
@@ -30,7 +30,7 @@ namespace TursitAppV4.Model
 
         public static async Task<ObservableCollection<Koncert>> Load()
         {
-            string favoritData = await DeserializeSaveGameAsync(FileName);
+            string favoritData = await DeserializeFavoritAsync(FileName);
             if (favoritData != null)
             {
                 return (ObservableCollection<Koncert>)JsonConvert.DeserializeObject(favoritData, typeof(ObservableCollection<Koncert>));
@@ -38,7 +38,7 @@ namespace TursitAppV4.Model
             return null;
         }
 
-        private static async Task<string> DeserializeSaveGameAsync(string fileName)
+        private static async Task<string> DeserializeFavoritAsync(string fileName)
         {
             try
             {
