@@ -124,8 +124,8 @@
             </type_NamedElement>
           </property>
           <property
-            Id="3774eb21-46b1-49a4-a1c7-000b485ce1de"
-            name="Kategorier"
+            Id="e6b5208e-3769-4507-9774-1639a0125bf2"
+            name="Selected Koncert"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -136,8 +136,8 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="1beed6a7-1bf5-4f82-af47-3336b996405b"
-                LastKnownName="ObservableColletion&lt;Kategori&gt;"
+                Id="a87d05cc-e0e4-449b-8747-85fb7c28bd50"
+                LastKnownName="koncert"
                 LastKnownLocation="Package1_1043.uml" />
             </type_NamedElement>
           </property>
@@ -231,49 +231,51 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="8a4d182a-8725-493e-9ca7-81cf78660e73"
+            isDerived="false"
+            sourceEndRoleName="Koncerthandler"
+            targetEndRoleName="Kategori"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="28c6f0d5-7c47-4cc9-9cbd-2060e7529e4d"
+              LastKnownName="Kategori"
+              LastKnownLocation="Package_1044.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="19e0a5de-a79e-4492-b99e-5a74f7bda111"
+                  name="Koncerthandler"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9097cbfa-5159-4b90-9c7a-91b0f8463df0"
+                  name="Kategori"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
-        <ownedAttributesInternal>
-          <property
-            Id="3e89a20c-1f34-4167-b3b1-d91407df05a4"
-            name="Koncert"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="b247a834-b472-4506-8173-856be9f97737"
-                LastKnownName="string"
-                LastKnownLocation="Package_1044.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="378feee6-3f35-499d-9d37-cb406ad63281"
-            name="Kategori"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="b247a834-b472-4506-8173-856be9f97737"
-                LastKnownName="string"
-                LastKnownLocation="Package_1044.uml" />
-            </type_NamedElement>
-          </property>
-        </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
             Id="d1dfeec9-f574-4329-8cc4-0b2726477ff5"
-            name="Tilføjkoncert_favorit"
+            name="SaveFavoritter"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -283,6 +285,30 @@
               <operationHasOwnedParameters>
                 <parameter
                   Id="382a8e54-46ea-4188-b071-622218f89ba4"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="4ede4c34-935e-49c7-a859-e4eb68c90184"
+                      LastKnownName="void"
+                      LastKnownLocation="Package1_1043.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="57d86680-4282-473e-a0be-a9d392e9aaaf"
+            name="LoadFavoritter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="891d6e1b-5f90-459b-92e6-20672993fe0e"
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
@@ -320,6 +346,11 @@
       <undefinedType
         Id="4ede4c34-935e-49c7-a859-e4eb68c90184"
         name="void" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a87d05cc-e0e4-449b-8747-85fb7c28bd50"
+        name="koncert" />
     </packageHasNamedElement>
   </packagedElements>
 </package>

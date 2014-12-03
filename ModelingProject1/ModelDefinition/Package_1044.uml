@@ -118,15 +118,68 @@
                     <literalString
                       Id="5d1fb9f9-6490-43f4-b28c-e470ad3a2a84"
                       name="Lower"
-                      value="*" />
+                      value="1" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
                       Id="8c75d985-dc46-4dc7-b2d8-3c99a719bc6b"
                       name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b24e302e-9c67-463d-830c-0b797c287df5"
+            isDerived="false"
+            sourceEndRoleName="Koncert"
+            targetEndRoleName="Kategori"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="28c6f0d5-7c47-4cc9-9cbd-2060e7529e4d"
+              LastKnownName="Kategori"
+              LastKnownLocation="Package_1044.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="56d0b168-3989-4126-9a51-7d01ea8954ae"
+                  name="Koncert"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="26957751-1c42-4f89-8df7-5d512a9839e7"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5e706ca2-39b9-45a7-94fc-77b7330abdf0"
+                      name="Upper"
                       value="*" />
                   </upperValueInternal>
                 </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0cb8b215-b340-48bb-bbe0-89187908eb84"
+                  name="Kategori"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -232,60 +285,6 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
-        <targetEnds>
-          <association
-            Id="8b5da409-4ccd-4aa5-a21e-5b6460a3bf99"
-            isDerived="false"
-            sourceEndRoleName="Kategori"
-            targetEndRoleName="Koncert"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="af2ffb2d-912a-4fc1-832c-9a989ad25d69"
-              LastKnownName="Koncert"
-              LastKnownLocation="Package_1044.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="04b70e7c-6e1c-4077-b83c-745cb2b42620"
-                  name="Kategori"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="ceaccdf9-acf9-44e7-97d9-d9c11ab2f123"
-                  name="Koncert"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="e8fc968d-9642-4816-bac3-dc8d62d5d9f9"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="e6e66a2f-6dba-49bc-ae68-546893667731"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="415319c4-0abf-4fe4-87c6-6e170b0b1605"
