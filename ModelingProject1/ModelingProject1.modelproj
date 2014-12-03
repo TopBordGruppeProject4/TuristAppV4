@@ -29,12 +29,19 @@
       <SubType>Content</SubType>
       <DependentUpon>Design\DesignClassDiagram.classdiagram</DependentUpon>
     </Content>
-    <Content Include="Design\SekvensDiagram.sequencediagram">
+    <Content Include="Design\SekvensDiagramSave.sequencediagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Design\SekvensDiagram.sequencediagram.layout">
+    <Content Include="Design\SekvensDiagramSave.sequencediagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>Design\SekvensDiagram.sequencediagram</DependentUpon>
+      <DependentUpon>Design\SekvensDiagramSave.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Design\SequenceDiagramLoad.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Design\SequenceDiagramLoad.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Design\SequenceDiagramLoad.sequencediagram</DependentUpon>
     </Content>
     <Content Include="ModelDefinition\Package1_1043.uml">
       <SubType>Content</SubType>

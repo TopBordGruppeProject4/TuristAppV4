@@ -38,7 +38,7 @@
           <messageOccurrenceSpecification Id="04361cf9-56e9-49ad-8f5c-2d42db0d7410" name="MessageOccurrenceSpecification25">
             <elementDefinition Id="3e97c5e4-b1ca-4c11-8d46-5c6a72ab2991" />
             <covered>
-              <lifelineMoniker Id="a9d01491-65a4-4a6f-a2a4-339902ddcdb3" LastKnownName="Bruger" />
+              <lifelineMoniker Id="a9d01491-65a4-4a6f-a2a4-339902ddcdb3" LastKnownName=": kategorier" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="1fbf61e1-3914-4b89-a7fd-bc69647ffa9c" name="MessageOccurrenceSpecification26">
@@ -206,7 +206,7 @@
           <messageOccurrenceSpecification Id="7083a9e8-edb5-4133-bea8-ccf0ae7f4f61" name="MessageOccurrenceSpecification28">
             <elementDefinition Id="1f52aee0-2c80-4cb1-b6fa-9774b717d24e" />
             <covered>
-              <lifelineMoniker Id="a9d01491-65a4-4a6f-a2a4-339902ddcdb3" LastKnownName="Bruger" />
+              <lifelineMoniker Id="a9d01491-65a4-4a6f-a2a4-339902ddcdb3" LastKnownName=": kategorier" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="b9e54fe1-51c5-432c-ac81-ad0c4505536c" name="ExecutionOccurrenceSpecification14">
@@ -233,7 +233,7 @@
           </executionOccurrenceSpecification>
         </fragments>
         <lifelines>
-          <lifeline Id="a9d01491-65a4-4a6f-a2a4-339902ddcdb3" name="Bruger" isActor="false" lifelineDisplayName="Bruger">
+          <lifeline Id="a9d01491-65a4-4a6f-a2a4-339902ddcdb3" name=": kategorier" isActor="false" lifelineDisplayName=": kategorier">
             <elementDefinition Id="5b0ce916-5c16-42a9-ac13-d4d3c30175fa" />
             <topLevelOccurrences>
               <messageOccurrenceSpecificationMoniker Id="04361cf9-56e9-49ad-8f5c-2d42db0d7410" LastKnownName="MessageOccurrenceSpecification25" />
